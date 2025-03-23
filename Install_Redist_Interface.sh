@@ -100,7 +100,7 @@ DRL_FILE="$TEMP_DIR/Redist_Files.DRL"
 EXTRACT_DIR="$TEMP_DIR/extracted"
 DEST_DIR="/"
 PORTS_DIR="/userdata/roms/ports"
-DEPS_INSTALLER="- Instalador de dependencias - Win.sh"
+DEPS_INSTALLER="- Dependencies Installer - Win.sh"
 
 # Create the temporary directories
 echo "Creating temporary directories..."
