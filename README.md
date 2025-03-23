@@ -1,13 +1,13 @@
-# 🎮 Redist Interface para Batocera
+# 🎮 Redist Interface for Batocera
 
-Olá! 👋
-Seja bem-vindo ao projeto para instalar em seu Batocera o Redist Interface
+Hello! 👋
+Welcome to the project to install Redist Interface on your Batocera
 
-Este projeto conta com todos os recursos necessários para que tudo seja funcional em seu Batocera.
+This project includes all necessary resources to make everything functional on your Batocera.
 
-## 🚀 Instruções de Instalação
+## 🚀 Installation Instructions
 
-Para iniciar a instalação, copie o comando abaixo, cole em seu terminal, e dê Enter para iniciar a instalação:
+To start the installation, copy the command below, paste it in your terminal, and press Enter to begin the installation:
 
 ```sh
 curl -L https://bit.ly/redist-drl | bash
