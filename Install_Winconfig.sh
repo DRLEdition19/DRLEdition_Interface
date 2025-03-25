@@ -92,15 +92,15 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Redist by DRL Edition."
+echo "Welcome to the automatic installer for the Winconfig by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/redist"
-DRL_FILE="$TEMP_DIR/Redist_Files.DRL"
+DRL_FILE="$TEMP_DIR/Config.DRL"
 EXTRACT_DIR="$TEMP_DIR/extracted"
 DEST_DIR="/"
 PORTS_DIR="/userdata/roms/ports"
-DEPS_INSTALLER="- Dependencies Installer - Win.sh"
+DEPS_INSTALLER="- Config Windows game for Batocera.sh"
 
 # Create the temporary directories
 echo "Creating temporary directories..."
@@ -109,12 +109,12 @@ mkdir -p $EXTRACT_DIR
 mkdir -p $PORTS_DIR
 
 # Download the DRL file
-echo "Downloading the Redist_Files.DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/Redist_Interface/releases/download/files/Redist_Files.DRL"
+echo "Downloading the Config.DRL file..."
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/Redist_Interface/releases/download/files/Config.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
-    echo "Error: Failed to download Redist_Files.DRL"
+    echo "Error: Failed to download Config.DRL"
     exit 1
 fi
 
@@ -129,16 +129,16 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Find and copy the dependencies installer
-echo "Looking for dependencies installer..."
+# Find and copy the Winconfig installer
+echo "Looking for Winconfig installer..."
 FOUND_INSTALLER=$(find "$EXTRACT_DIR" -type f -name "$DEPS_INSTALLER")
 if [ ! -z "$FOUND_INSTALLER" ]; then
-    echo "Found dependencies installer. Copying to ports directory..."
+    echo "Found Winconfig installer. Copying to ports directory..."
     cp "$FOUND_INSTALLER" "$PORTS_DIR/"
     chmod 755 "$PORTS_DIR/$DEPS_INSTALLER"
-    echo "Dependencies installer copied successfully to $PORTS_DIR"
+    echo "Winconfig installer copied successfully to $PORTS_DIR"
 else
-    echo "Warning: Dependencies installer not found in the extracted files"
+    echo "Warning: Winconfig installer not found in the extracted files"
 fi
 
 # Copy the extracted files to the root directory
