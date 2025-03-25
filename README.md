@@ -28,4 +28,4 @@ To start the installation, copy the command below, paste it in your terminal, an
 curl -L bit.ly/winconfig-drl | bash
 ```
 
-## Linked by DRLEdition20 -1
+## Linked by DRLEdition20 - 1 = DRLEdition19
