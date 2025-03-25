@@ -11,7 +11,7 @@ To start the installation, copy the command below, paste it in your terminal, an
 
 ```sh
 curl -L bit.ly/redist_drl | bash
-
+```
 
 
 # 🎮 WinConfig for Batocera
