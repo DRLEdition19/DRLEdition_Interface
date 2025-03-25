@@ -26,5 +26,6 @@ To start the installation, copy the command below, paste it in your terminal, an
 
 ```sh
 curl -L bit.ly/winconfig-drl | bash
+```
 
-### Linked by DRLEdition20
+## Linked by DRLEdition20
