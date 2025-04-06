@@ -94,7 +94,7 @@ clear
 echo "Welcome to the automatic installer for the Winconfig by DRL Edition."
 
 # Temporary directory for download
-TEMP_DIR="/userdata/tmp/redist"
+TEMP_DIR="/userdata/tmp/Winconfig"
 DRL_FILE="$TEMP_DIR/Config.DRL"
 EXTRACT_DIR="$TEMP_DIR/extracted"
 DEST_DIR="/"
@@ -109,7 +109,7 @@ mkdir -p $PORTS_DIR
 
 # Download the DRL file
 echo "Downloading the Config.DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Config.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/Redist_Interface/releases/download/files/Config.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -128,37 +128,21 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Função para mover e substituir arquivos e pastas automaticamente
-move_and_replace() {
-    src="$1"
-    dest="$2"
-    
-    if [ -d "$dest" ] || [ -f "$dest" ]; then
-        echo "Removing existing $dest"
-        rm -rf "$dest"
-    fi
-    
-    echo "Moving $src to $dest"
-    mv "$src" "$dest"
-}
-
-# Find and move the Winconfig installer
+# Find and copy the Winconfig installer
 echo "Looking for Winconfig installer..."
 FOUND_INSTALLER=$(find "$EXTRACT_DIR" -type f -name "$DEPS_INSTALLER")
 if [ ! -z "$FOUND_INSTALLER" ]; then
-    echo "Found Winconfig installer. Moving to ports directory..."
-    move_and_replace "$FOUND_INSTALLER" "$PORTS_DIR/$DEPS_INSTALLER"
+    echo "Found Winconfig installer. Copying to ports directory..."
+    cp "$FOUND_INSTALLER" "$PORTS_DIR/"
     chmod 755 "$PORTS_DIR/$DEPS_INSTALLER"
-    echo "Winconfig installer moved successfully to $PORTS_DIR"
+    echo "Winconfig installer copied successfully to $PORTS_DIR"
 else
     echo "Warning: Winconfig installer not found in the extracted files"
 fi
 
-# Move the extracted files to the root directory
-echo "Moving files to the system..."
-for item in "$EXTRACT_DIR"/*; do
-    move_and_replace "$item" "$DEST_DIR/$(basename "$item")"
-done
+# Copy the extracted files to the root directory
+echo "Copying files to the system..."
+cp -r $EXTRACT_DIR/* $DEST_DIR
 
 # Create symbolic links
 echo "Creating symbolic links..."
