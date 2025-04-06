@@ -164,22 +164,6 @@ done
 # Create symbolic links
 echo "Creating symbolic links..."
 
-# Function to create a symbolic link and remove the target if it already exists
-create_symlink() {
-    local target="$1"
-    local link="$2"
-
-    # Remove existing file or directory
-    if [ -e "$link" ] || [ -L "$link" ]; then
-        echo "Removing existing link or file: $link"
-        rm -rf "$link"
-    fi
-
-    # Create the new symbolic link
-    ln -s "$target" "$link"
-    echo "Created symlink: $link → $target"
-}
-
 create_symlink "/userdata/system/configs/bat-drl/AntiMicroX" "/opt/AntiMicroX"
 create_symlink "/userdata/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/bin/antimicrox"
 
