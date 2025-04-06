@@ -90,6 +90,7 @@ type_text "The installation will start in a few moments. Please wait..."
 sleep 2
 clear
 
+
 # Welcome message
 echo "Welcome to the automatic installer for the Winconfig by DRL Edition."
 
@@ -128,21 +129,21 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Find and move the Winconfig installer
+# Find and copy the Winconfig installer
 echo "Looking for Winconfig installer..."
 FOUND_INSTALLER=$(find "$EXTRACT_DIR" -type f -name "$DEPS_INSTALLER")
 if [ ! -z "$FOUND_INSTALLER" ]; then
-    echo "Found Winconfig installer. Moving to ports directory..."
-    mv "$FOUND_INSTALLER" "$PORTS_DIR/"
+    echo "Found Winconfig installer. Copying to ports directory..."
+    cp "$FOUND_INSTALLER" "$PORTS_DIR/"
     chmod 755 "$PORTS_DIR/$DEPS_INSTALLER"
     echo "Winconfig installer copied successfully to $PORTS_DIR"
 else
     echo "Warning: Winconfig installer not found in the extracted files"
 fi
 
-# Move the extracted files to the root directory
-echo "Moving files to the system..."
-mv -f $EXTRACT_DIR/* $DEST_DIR
+# Copy the extracted files to the root directory
+echo "Copying files to the system..."
+cp -r $EXTRACT_DIR/* $DEST_DIR
 
 # Create symbolic links
 echo "Creating symbolic links..."
