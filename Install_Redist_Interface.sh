@@ -100,7 +100,7 @@ DRL_FILE="$TEMP_DIR/Redist_Files.DRL"
 EXTRACT_DIR="$TEMP_DIR/extracted"
 DEST_DIR="/"
 PORTS_DIR="/userdata/roms/ports"
-DEPS_INSTALLER="- Dependencies Installer - Win.sh"
+DEPS_INSTALLER="- Instalador de dependencias - Win.sh"
 
 # Create the temporary directories
 echo "Creating temporary directories..."
@@ -110,7 +110,7 @@ mkdir -p $PORTS_DIR
 
 # Download the DRL file
 echo "Downloading the Redist_Files.DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Redist_Files_proton.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/Redist_Interface/releases/download/files/Redist_Files.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -129,40 +129,40 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Função para mover e substituir arquivos e pastas automaticamente
-move_and_replace() {
-    src="$1"
-    dest="$2"
-    
-    if [ -d "$dest" ] || [ -f "$dest" ]; then
-        echo "Removing existing $dest"
-        rm -rf "$dest"
-    fi
-    
-    echo "Moving $src to $dest"
-    mv "$src" "$dest"
-}
-
-# Find and move the dependencies installer
+# Find and copy the dependencies installer
 echo "Looking for dependencies installer..."
 FOUND_INSTALLER=$(find "$EXTRACT_DIR" -type f -name "$DEPS_INSTALLER")
 if [ ! -z "$FOUND_INSTALLER" ]; then
-    echo "Found dependencies installer. Moving to ports directory..."
-    move_and_replace "$FOUND_INSTALLER" "$PORTS_DIR/$DEPS_INSTALLER"
+    echo "Found dependencies installer. Copying to ports directory..."
+    cp "$FOUND_INSTALLER" "$PORTS_DIR/"
     chmod 755 "$PORTS_DIR/$DEPS_INSTALLER"
-    echo "Dependencies installer moved successfully to $PORTS_DIR"
+    echo "Dependencies installer copied successfully to $PORTS_DIR"
 else
     echo "Warning: Dependencies installer not found in the extracted files"
 fi
 
-# Move the extracted files to the root directory
-echo "Moving files to the system..."
-for item in "$EXTRACT_DIR"/*; do
-    move_and_replace "$item" "$DEST_DIR/$(basename "$item")"
-done
+# Copy the extracted files to the root directory
+echo "Copying files to the system..."
+cp -r $EXTRACT_DIR/* $DEST_DIR
 
 # Create symbolic links
 echo "Creating symbolic links..."
+
+# Function to create a symbolic link and remove the target if it already exists
+create_symlink() {
+    local target="$1"
+    local link="$2"
+
+    # Remove existing file or directory
+    if [ -e "$link" ] || [ -L "$link" ]; then
+        echo "Removing existing link or file: $link"
+        rm -rf "$link"
+    fi
+
+    # Create the new symbolic link
+    ln -s "$target" "$link"
+    echo "Created symlink: $link → $target"
+}
 
 create_symlink "/userdata/system/configs/bat-drl/AntiMicroX" "/opt/AntiMicroX"
 create_symlink "/userdata/system/configs/bat-drl/AntiMicroX/antimicrox" "/usr/bin/antimicrox"
