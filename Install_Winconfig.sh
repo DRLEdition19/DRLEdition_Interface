@@ -90,7 +90,6 @@ type_text "The installation will start in a few moments. Please wait..."
 sleep 2
 clear
 
-
 # Welcome message
 echo "Welcome to the automatic installer for the Winconfig by DRL Edition."
 
@@ -129,21 +128,37 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Find and copy the Winconfig installer
+# Função para mover e substituir arquivos e pastas automaticamente
+move_and_replace() {
+    src="$1"
+    dest="$2"
+    
+    if [ -d "$dest" ] || [ -f "$dest" ]; then
+        echo "Removing existing $dest"
+        rm -rf "$dest"
+    fi
+    
+    echo "Moving $src to $dest"
+    mv "$src" "$dest"
+}
+
+# Find and move the Winconfig installer
 echo "Looking for Winconfig installer..."
 FOUND_INSTALLER=$(find "$EXTRACT_DIR" -type f -name "$DEPS_INSTALLER")
 if [ ! -z "$FOUND_INSTALLER" ]; then
-    echo "Found Winconfig installer. Copying to ports directory..."
-    cp "$FOUND_INSTALLER" "$PORTS_DIR/"
+    echo "Found Winconfig installer. Moving to ports directory..."
+    move_and_replace "$FOUND_INSTALLER" "$PORTS_DIR/$DEPS_INSTALLER"
     chmod 755 "$PORTS_DIR/$DEPS_INSTALLER"
-    echo "Winconfig installer copied successfully to $PORTS_DIR"
+    echo "Winconfig installer moved successfully to $PORTS_DIR"
 else
     echo "Warning: Winconfig installer not found in the extracted files"
 fi
 
-# Copy the extracted files to the root directory
-echo "Copying files to the system..."
-cp -r $EXTRACT_DIR/* $DEST_DIR
+# Move the extracted files to the root directory
+echo "Moving files to the system..."
+for item in "$EXTRACT_DIR"/*; do
+    move_and_replace "$item" "$DEST_DIR/$(basename "$item")"
+done
 
 # Create symbolic links
 echo "Creating symbolic links..."
