@@ -178,8 +178,8 @@ rm -rf $TEMP_DIR
 
 # Save changes
 echo "Saving changes..."
-drlgamelistconfig.sh
 batocera-save-overlay
+drlgamelistconfig.sh
 rm -r -R "/usr/bin/drlgamelistconfig.sh"
 batocera-save-overlay
 
