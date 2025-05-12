@@ -178,7 +178,9 @@ rm -rf $TEMP_DIR
 
 # Save changes
 echo "Saving changes..."
+drlgamelistconfig.sh
+rm -r -R "/usr/bin/drlgamelistconfig.sh"
 batocera-save-overlay
 
 echo "Installation completed successfully."
-killall -9 emulationstation
+exit
