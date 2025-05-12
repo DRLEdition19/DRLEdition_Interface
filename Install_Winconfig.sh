@@ -178,9 +178,7 @@ rm -rf $TEMP_DIR
 
 # Save changes
 echo "Saving changes..."
-batocera-save-overlay
-drlgamelistconfig.sh
-rm -r -R "/usr/bin/drlgamelistconfig.sh"
+curl -L "https://github.com/DRLEdition19/DRLEdition_Interface/raw/refs/heads/main/Winconfig_gamelist_config.sh" | bash
 batocera-save-overlay
 
 echo "Installation completed successfully."
