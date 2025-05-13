@@ -26,7 +26,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 
 ![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/joytick.jpg?raw=true)
 
-**Estas configurações de mapeamento abaixo, são correspondentes com os botões do gamepad ilustrado acima.**
+Estas configurações de mapeamento abaixo, são correspondentes com os botões do gamepad ilustrado acima.
 ---
 
 # 🎮 Configuração de Controles do Gamepad (Jogador 1 - Batocera) 🕹️
