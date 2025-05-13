@@ -29,7 +29,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 # Estas configurações de mapeamento abaixo, são correspondentes com os botões do gamepad ilustrado acima
 ---
 
-# 🎮 Configuração de Controles do Gamepad (Player 1 - Batocera) 🕹️
+# 🎮 Configuração de Controles do Gamepad (Jogador 1 - Batocera) 🕹️
 
 Este documento descreve o mapeamento dos botões do gamepad para o **Jogador 1**, como configurado no seu Batocera. Prepare-se para a ação! 🔥
 
