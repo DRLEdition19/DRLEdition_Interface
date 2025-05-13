@@ -4,7 +4,7 @@ Olá! 👋
 
 Seja bem vindo ao projeto de instalação do Winconfig - Windows Game Fix - para batocera!
 
-Este projeto possui todos os recursos necessários para fornecer uma ferrament totalmente funcional para seu batocera.
+Este projeto possui todos os recursos necessários para fornecer uma ferramenta totalmente funcional para seu batocera.
 
 ![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera.png?raw=true)
 
@@ -28,7 +28,7 @@ O Winconfig - Windows Game Fix - já conta com um recurso de reconhecimento do G
 
 ![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/joytick.jpg?raw=true)
 
-# Estas configurações de controle abaixo, são correspondentes com os botões do teclado ilustrado acima
+# Estas configurações de mapeamento abaixo, são correspondentes com os botões do gamepad ilustrado acima
 ---
 
 # 🎮 Configuração de Controles do Gamepad (Player 1 - Batocera) 🕹️
