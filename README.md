@@ -1,6 +1,7 @@
 # 🎮 WinConfig - Windows Game Fix - para batocera
 
 Olá! 👋
+
 Seja bem vindo ao projeto de instalação do Winconfig - Windows Game Fix - para batocera!
 
 Este projeto possui todos os recursos necessários para fornecer uma ferrament totalmente funcional para seu batocera.
@@ -15,7 +16,7 @@ Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu
 curl -L bit.ly/winconfig-drl | bash
 ```
 
-**Você irá encontrar a ferramenta na dentro da coleção **Ports**
+Você irá encontrar a ferramenta dentro da coleção **Ports**
 
 ## 🎮 Suporte ao Gamepad
 
