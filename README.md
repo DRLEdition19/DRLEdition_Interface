@@ -49,7 +49,7 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 | 🟢 **⭕ / A**                     | Trocar Item / Pula para o próximo botão / BOTÃO TAB DO TECLADO/ Ação Principal 3 |
 | 🕹️ **L-ANALOG**             | Controla do Ponteiro do Mouse |
 | ▶️ **START**                 | BOTÃO "F4"   |
-| ➖ **SELECT **                | BOTÃO "ALT" |
+| ➖ **SELECT**                | BOTÃO "ALT" |
 | ↖️ **LB / L1**        | Botão Esquerdo do Mouse / Ação Secundária 1 |
 | ↗️ **RB / B2**       | Botão Direitoo do Mouse / Ação Secundária 2 |
 
