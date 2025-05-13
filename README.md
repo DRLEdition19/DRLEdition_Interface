@@ -10,7 +10,7 @@ Este projeto possui todos os recursos necessários para fornecer uma ferramenta 
 
 ## 🚀 Instruções de instalação
 
-Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu batocera pressionando a tecla **"F1"**, copie este comando abaixo, abra seu terminal pressionado a tecla **"F4"**, cole este comando, pressione a tecla **"Enter"** e aguarde a instalação finalizar:
+Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu batocera pressionando a tecla **"F1"**, copie este comando abaixo, pressione a tecla **"F4"** para abrir seu terminal, cole este comando, pressione a tecla **"Enter"** e aguarde a instalação finalizar:
 
 ```sh
 curl -L bit.ly/winconfig-drl | bash
