@@ -44,9 +44,9 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 | ⬇️ **D-PAD DOWN**                  | Move para Baixo / Navegação |
 | ⬅️ **D-PAD LEFT**                  | Move para Esquerda / Navegação |
 | ➡️ **D-PAD RIGHT**                 | Move para Direita / Navegação |
-| 🟡 **⏹️ / Y**                     | Seleciona o ítem / BOTÃO SPACE DO TECLADO|
-| 🔴 **✖️ / B**                     | Confirmar / BOTÃO ENTER DO TECLADO|
-| 🟢 **⭕ / A**                     | Trocar Item / Pula para o próximo botão / BOTÃO TAB DO TECLADO |
+| **1️⃣ / ⏹️ / Y**                     | Seleciona o ítem / BOTÃO SPACE DO TECLADO|
+| **2️⃣ / ✖️ / B**                     | Confirmar / BOTÃO ENTER DO TECLADO|
+| **3️⃣ / ⭕ / A**                     | Trocar Item / Pula para o próximo botão / BOTÃO TAB DO TECLADO |
 | 🕹️ **L-ANALOG**             | Controla o Ponteiro do Mouse |
 | ▶️ **START**                 | BOTÃO "F4"   |
 | ➖ **SELECT**                | BOTÃO "ALT" |
