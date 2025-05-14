@@ -57,6 +57,6 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 
 **✨ Dica:** As "Descrições da Ação" são exemplos comuns. A função exata pode mudar dependendo do gamepad, ou joystick, que você está usando. Divirta-se explorando! 🎉
 
-***Esta ferramenta ainda esta em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
+***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
 
 ![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera%20-%20logo.png?raw=true)
