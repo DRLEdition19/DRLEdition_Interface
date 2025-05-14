@@ -19,7 +19,7 @@ read -r -d '' GAME_ENTRY <<'EOF'
 		<path>./- Windows Game Fix.sh</path>
 		<name>- Windows Game Fix on Batocera</name>
 		<sortname>1 =-  Windows Game Fix</sortname>
-		<desc>This script, known as the "Windows Game Manager for Batocera - DRL Edition," is designed to simplify the configuration and management of Windows games within the Batocera operating system.
+		<desc>This script, known as the "Windows Game Manager for Batocera - by DRL Edition", is designed to simplify the configuration and management of Windows games within the Batocera operating system.
 
 Its core functionalities include:
 
