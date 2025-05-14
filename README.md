@@ -62,4 +62,4 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 ![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera%20-%20logo.png?raw=true)
 
 ---
-# 💯% Bahiano e Brasileiro 🇧🇷
+## 💯% Bahiano - Brasileiro 🇧🇷
