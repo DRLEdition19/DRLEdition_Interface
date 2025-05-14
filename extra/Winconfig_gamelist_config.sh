@@ -18,7 +18,6 @@ read -r -d '' GAME_ENTRY <<'EOF'
 		<game>
 		<path>./- Windows Game Fix.sh</path>
 		<name>- Windows Game Fix on Batocera</name>
-		<sortname>1 =-  Windows Game Fix</sortname>
 		<desc>This script, known as the "Windows Game Manager for Batocera - by DRL Edition", is designed to simplify the configuration and management of Windows games within the Batocera operating system.
 
 Its core functionalities include:
@@ -44,21 +43,28 @@ The project was based on an initiative started by DRL Edition on 22-01-2023, and
     Developer: DRL Edition19
     Redist, 2025 by DRL Edition
 =================================================</desc>
-		<rating>2.1</rating>
+		<image>./images/WindowsGameFix-thumb.png</image>
+		<marquee>./images/WindowsGameFix-marquee.png</marquee>
+		<thumbnail>./images/WindowsGameFix-thumb.png</thumbnail>
+		<fanart>./images/WindowsGameFix-thumb.png</fanart>
+		<titleshot>./images/WindowsGameFix-thumb.png</titleshot>
+		<cartridge>./images/WindowsGameFix-thumb.png</cartridge>
+		<boxart>./images/WindowsGameFix-marquee.png</boxart>
+		<boxback>./images/WindowsGameFix-thumb.png</boxback>
+		<wheel>./images/WindowsGameFix-thumb.png</wheel>
+		<mix>./images/WindowsGameFix-thumb.png</mix>
+		<rating>1</rating>
+		<releasedate>20230122T220656</releasedate>
 		<developer>DRL Edition</developer>
 		<publisher>DRLEdition19</publisher>
 		<genre>Game Fix</genre>
-		<genreid>0</genreid>
-		<region>usa</region>
+		<players>1</players>
+		<favorite>true</favorite>
 		<lang>en</lang>
-		<image>./images/WindowsGameFix-thumb.png</image>
-		<wheel>./images/WindowsGameFix-thumb.png</wheel>
-		<boxart>./images/WindowsGameFix-marquee.png</boxart>
+		<region>Conceicao de Cima, Alagoinhas, Bahia, Brazil</region>
+		<sortname>1 =-  Windows Game Fix</sortname>
+		<genreid>0</genreid>
 		<screenshot>./images/WindowsGameFix-thumb.png</screenshot>
-		<cartridge>./images/WindowsGameFix-thumb.png</cartridge>
-		<mix>./images/WindowsGameFix-thumb.png</mix>
-		<thumbnail>./images/WindowsGameFix-thumb.png</thumbnail>
-		<marquee>./images/WindowsGameFix-marquee.png</marquee>
 	</game>
 EOF
 
