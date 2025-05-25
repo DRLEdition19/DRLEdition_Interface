@@ -16,8 +16,9 @@ Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu
 curl -L bit.ly/winconfig-drl | bash
 ```
 
+## 🧩 Implementações e Atualizações
 
-**Após instalação, a aguarde, pois a ferramenta irá perguntar qual idioma você deseja para a ferramenta.**
+**Após instalação, será perguntado qual idioma você deseja para a ferramenta.**
 **Lembrando, que esta ferramenta agora conta com os idiomas:**
 
 ***-Portugês Brasil***
