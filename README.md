@@ -16,9 +16,11 @@ Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu
 curl -L bit.ly/winconfig-drl | bash
 ```
 
+Você irá encontrar a ferramenta dentro da coleção **Ports**
+
 ## 🧩 Implementações e Atualizações
 
-**Após instalação, será perguntado qual idioma você deseja para a ferramenta.**
+**Durante a instalação, será perguntado qual idioma você deseja para a ferramenta.**
 **Lembrando, que esta ferramenta agora conta com os idiomas:**
 
 ***-Portugês Brasil***
@@ -30,8 +32,6 @@ curl -L bit.ly/winconfig-drl | bash
 ***-Italiano***
 
 ***-Francês***
-
-Você irá encontrar a ferramenta dentro da coleção **Ports**
 
 # 🎮 Suporte ao Gamepad
 ---
