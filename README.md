@@ -19,9 +19,13 @@ curl -L bit.ly/winconfig-drl | bash
 **Após instalação, a aguarde, pois a ferramenta irá perguntar qual idioma você deseja para a ferramenta.**
 **Lembrando, que esta ferramenta agora conta com os idiomas:**
 ***-Portugês Brasil***
+
 ***-Inglês***
+
 ***-Espanhol***
+
 ***-Italiano***
+
 ***-Francês***
 
 Você irá encontrar a ferramenta dentro da coleção **Ports**
