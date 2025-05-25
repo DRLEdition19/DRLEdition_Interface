@@ -195,7 +195,7 @@ echo "Configurando permissões (chmod 777)..."
 chmod 777 /tmp/gamelistconfig.sh
 
 # Inicia a ferramenta para configurar o Idioma
-/tmp/gamelistconfig.sh
+xterm -fs 14 -fg white -bg black -fa "Monospace" -en UTF-8 -sb -rightbar -e bash -c "PS1='[\u@\h \$PWD]# ' /bin/bash /tmp/gamelistconfig.sh"
 
 rm -r -f /tmp/gamelistconfig.sh
 
