@@ -10,11 +10,19 @@ Este projeto possui todos os recursos necessários para fornecer uma ferramenta 
 
 ## 🚀 Instruções de instalação
 
-Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu batocera pressionando a tecla **"F1"**, copie este comando abaixo, pressione a tecla **"F4"** para abrir seu terminal, cole este comando, pressione a tecla **"Enter"** e aguarde a instalação finalizar:
+Para iniciar a instalação da ferramenta, abra o gerenciador de arquivos em seu batocera pressionando a tecla **"F1"**, copie este comando abaixo, pressione a tecla **"F4"** para abrir seu terminal, cole este comando, pressione a tecla **"Enter"**:
 
 ```sh
 curl -L bit.ly/winconfig-drl | bash
 ```
+
+**Após instalação, a aguarde, pois a ferramenta irá perguntar qual idioma você deseja para a ferramenta.**
+**Lembrando, que esta ferramenta agora conta com os idiomas:**
+***-Portugês Brasil***
+***-Inglês***
+***-Espanhol***
+***-Italiano***
+***-Francês***
 
 Você irá encontrar a ferramenta dentro da coleção **Ports**
 
