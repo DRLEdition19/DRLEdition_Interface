@@ -320,4 +320,4 @@ done
 clear
 echo "Processo concluído com sucesso! / Process completed successfully! / ¡Proceso completado exitosamente! / Processo completato con successo! / Processus terminé avec succès!"
 
-show_menu "$@"
+exit 0
