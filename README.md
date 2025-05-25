@@ -18,6 +18,8 @@ curl -L bit.ly/winconfig-drl | bash
 
 Você irá encontrar a ferramenta dentro da coleção **Ports**
 
+***Atualização - 22.05.2025***
+
 ## 🧩 Implementações e Atualizações
 
 **Durante a instalação, será perguntado qual idioma você deseja para a ferramenta.**
