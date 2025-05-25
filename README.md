@@ -21,7 +21,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 ## 🧩 Implementações e Atualizações
 
 **Durante a instalação, será perguntado qual idioma você deseja para a ferramenta.**
-**Lembrando, que esta ferramenta agora conta com os idiomas:**
+**Esta ferramenta agora conta com os idiomas:**
 
 ***-Portugês Brasil***
 
