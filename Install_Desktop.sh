@@ -141,5 +141,6 @@ rm -rf $TEMP_DIR
 echo "Saving changes..."
 batocera-save-overlay
 echo "Installation completed successfully."
+echo "For the Desktop to work properly, you will need to restart your machine."
 
 exit 0
