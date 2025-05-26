@@ -98,7 +98,6 @@ DRL_FILE="$TEMP_DIR/Desktop_for_Batocera.DRL"
 EXTRACT_DIR="$TEMP_DIR/extracted"
 DEST_DIR="/"
 PORTS_DIR="/userdata/roms/ports"
-DEPS_INSTALLER="- Windows Game Fix.sh"
 
 # Create the temporary directories
 echo "Creating temporary directories..."
@@ -108,7 +107,7 @@ mkdir -p $PORTS_DIR
 
 # Download the DRL file
 echo "Downloading the DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Winconfig_Files_full_3.0.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Desktop_for_batocera_2.0.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -125,18 +124,6 @@ if [ $? -ne 0 ]; then
     echo "Error: Failed to extract the DRL file"
     rm -rf $TEMP_DIR
     exit 1
-fi
-
-# Find and copy the Desktop_for_Batocera installer
-echo "Looking for Desktop_for_Batocera installer..."
-FOUND_INSTALLER=$(find "$EXTRACT_DIR" -type f -name "$DEPS_INSTALLER")
-if [ ! -z "$FOUND_INSTALLER" ]; then
-    echo "Found Desktop_for_Batocera installer. Copying to ports directory..."
-    cp "$FOUND_INSTALLER" "$PORTS_DIR/"
-    chmod 755 "$PORTS_DIR/$DEPS_INSTALLER"
-    echo "Desktop_for_Batocera installer copied successfully to $PORTS_DIR"
-else
-    echo "Warning: Desktop_for_Batocera installer not found in the extracted files"
 fi
 
 # Copy the extracted files to the root directory
