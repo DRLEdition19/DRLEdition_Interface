@@ -1,6 +1,10 @@
-# 🎮 WinConfig - Windows Game Fix - para batocera
+# Botões para atalho rápido
+[![WinConfig - Windows Game Fix](https://img.shields.io/badge/WinConfig%20-%20Windows%20Game%20Fix-Download-blue?style=for-the-badge)](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/README.md#-winconfig---windows-game-fix---para-batocera)
 
-[![Download Desktop DRL](https://img.shields.io/badge/Baixar%20Desktop%20DRL-Download-blue?style=for-the-badge)](https://bit.ly/desktop-drl)
+[![Desktop para Batocera](https://img.shields.io/badge/Desktop%20para%20Batocera-Download-blue?style=for-the-badge)](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/README.md#%EF%B8%8F-desktop-para-batocera)
+
+---
+# 🎮 WinConfig - Windows Game Fix - para batocera
 
 Olá! 👋
 
