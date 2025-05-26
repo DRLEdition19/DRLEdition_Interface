@@ -1,5 +1,5 @@
 # Botões para atalho rápido
-[![WinConfig - Windows Game Fix](https://img.shields.io/badge/WinConfig%20-%20Windows%20Game%20Fix-Download-blue?style=for-the-badge)](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/README.md#-winconfig---windows-game-fix---para-batocera)
+[![WinConfig Windows Game Fix](https://img.shields.io/badge/WinConfig%20Windows%20Game%20Fix-Download-blue?style=for-the-badge)](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/README.md#-winconfig---windows-game-fix---para-batocera)
 
 [![Desktop para Batocera](https://img.shields.io/badge/Desktop%20para%20Batocera-Download-blue?style=for-the-badge)](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/README.md#%EF%B8%8F-desktop-para-batocera)
 
