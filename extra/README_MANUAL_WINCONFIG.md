@@ -269,10 +269,10 @@ Alguns jogos de Windows, para funcionarem direito, precisam de certos "programin
         * **`[Continuar com a instalação]`:** Escolha isso para instalar os "programinhas extras" de novo (talvez para tentar uma versão diferente ou se você mudou alguma configuração).
 6.  **Instalando os "Programinhas Extras":**
     * Se você escolheu continuar (ou se era a primeira vez), o Redist começa a trabalhar.
-    * Ele pega os "programinhas extras" de uma pasta especial no seu sistema (`/userdata/system/configs/bat-drl/redist/` - você precisa colocar os instaladores desses programas lá antes).
+    * Ele instala os "programinhas extras" para que dei jogo funcione.
     * **Como ele instala?** Nas `[Configurações]` do WinConfig, há uma opção chamada `(Redist) Modo Instalação Rápida`.
-        * **Modo Padrão (se a opção estiver "Desativado"):** Ele copia todos os arquivos dos "programinhas extras" para dentro da "pasta especial" do jogo. É mais garantido, mas gasta mais espaço no seu HD/pendrive e pode demorar um pouco.
-        * **Modo Rápido (se a opção estiver "Ativado"):** Para economizar espaço e tempo, ele usa uns "atalhos inteligentes" para as pastas maiores dos "programinhas extras". Arquivos menores ainda são copiados. É mais rápido e economiza espaço, mas pode não funcionar com todos os jogos.
+        * **Modo Padrão (se a opção estiver "Desativado"):** Ele instala todos os arquivos dos "programinhas extras" na "pasta especial" do jogo. É mais garantido, mas gasta mais espaço no seu HD/pendrive e pode demorar um pouco.
+        * **Modo Rápido (se a opção estiver "Ativado"):** Para economizar espaço e tempo, ele usa "instalações inteligentes" para as pastas maiores dos "programinhas extras". Arquivos menores ainda são instalados. É mais rápido e economiza espaço, mas pode não funcionar com todos os jogos.
     * Uma barrinha de progresso vai te mostrar o que está acontecendo.
 7.  **Terminou!**
     * O WinConfig vai te dizer se deu tudo certo ou se houve algum erro (o erro mais comum é "Nenhum recurso pôde ser instalado...", que geralmente significa que você esqueceu o Passo Mais Importante do Aviso lá em cima!).
