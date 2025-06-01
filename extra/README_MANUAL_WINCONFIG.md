@@ -46,7 +46,7 @@ Bem-vindo ao manual completo do **WinConfig - DRL Edition**! Esta ferramenta gr�
 7.  [🔬 Detalhes Extras (Para os Curiosos!)](#7--detalhes-extras-para-os-curiosos)
 8.  [🧩 Programinhas que o WinConfig Precisa para Funcionar](#8--programinhas-que-o-winconfig-precisa-para-funcionar)
 9.  [📜 Novidades das Versões e Onde Pedir Ajuda](#9--novidades-das-versões-e-onde-pedir-ajuda)
-10.  [🎮 Suporte ao Gamepad](#10--🎮-Suporte-ao-Gamepad)
+10.  [🎮 Suporte ao Gamepad](#10--Suporte-ao-Gamepad)
 
 ---
 
