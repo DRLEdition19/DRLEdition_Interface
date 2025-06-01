@@ -116,18 +116,18 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
 ## 🧩 Implementações e Atualizações
 * ***Atualização - 22.05.2025***
 
-* *Correção de bugs*
-* *Adicionado várias ferramentas*
+    * **Correção de bugs*
+    * **Adicionado várias ferramentas*
 
 * ***Atualização - 01.06.2025***
 
-* *Correção de Bugs*
-* *Implementação Aplicações padrão para determinados formatos de arquivos*
-* *Implementado uma ferramenta para comprimir Jogos em ".wsquashfs" e/descompactá-lo.!*
-* *Adicionado ferramentas para descompactar arquivos compactados. (ex: .zip, .rar)*
-* *Adicionado a aplicação **WPS Officie** para a edição de arquivos office*
-* *Adicionado o **SM Player** para reprodução de vídeos e músicas*
-* *Corrigido nome do ícone do Chrome*
+    * **Correção de Bugs*
+    * **Implementação Aplicações padrão para determinados formatos de arquivos*
+    * **Implementado uma ferramenta para comprimir Jogos em ".wsquashfs" e/descompactá-lo.!*
+    * **Adicionado ferramentas para descompactar arquivos compactados. (ex: .zip, .rar)*
+    * **Adicionado a aplicação **WPS Officie** para a edição de arquivos office*
+    * **Adicionado o **SM Player** para reprodução de vídeos e músicas*
+    * **Corrigido nome do ícone do Chrome*
 
 **Adicionado um desinstalador, para caso o usuário deseje remover o "Desktop for Batocera" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)**
 ---
