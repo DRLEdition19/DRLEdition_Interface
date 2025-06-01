@@ -139,6 +139,7 @@ rm -rf $TEMP_DIR
 
 # Save changes
 echo "Saving changes..."
+rm -f "/userdata/system/Desktop/gparted.desktop"
 batocera-save-overlay
 echo "Installation completed successfully."
 echo "For the Desktop to work properly, you will need to restart your machine."
