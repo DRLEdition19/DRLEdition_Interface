@@ -328,7 +328,7 @@ Pense nesta ferramenta como uma "montadora de jogos". Ela pega os arquivos do se
     > 4.  **Crie arquivos compactados ".wsquashfs" ou ".plus" (Caso seja de seu interesse):**
     >     * Você poderá copactar a pasta do jogo inteira se quiser. Para isso, basta aceitar quando a ferramenta perguntar se você quer compactar o jogo.
     >     * Ao compactar este ambiente ".wine" montado, o seu jogo já terá todas as dependências instaladas, e consequentemente este jogo irá rodar em qualquer outro batocera.
-	>     * òtimo para quem deseja compartilhar seus jogos com os amigos e deseja que os jogos funcionem sem pedir a instalação de recursos e dependências novamente.
+	>     * Ótimo para quem deseja compartilhar seus jogos com os amigos e deseja que os jogos funcionem sem pedir a instalação de recursos e dependências novamente.
 
 **Outros Botões na "Montadora":**
 * `[Redist - Instalador de Dependências]`: Leva você para a outra ferramenta Redist.
