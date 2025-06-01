@@ -131,7 +131,7 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
 
     * **Correção de Bugs*
     * **Implementação Aplicações padrão para determinados formatos de arquivos*
-    * **Implementado mais uma ferramenta para comprimir Jogos em ".wsquashfs" e/descompactá-lo.!*
+    * **Implementado mais uma ferramenta para comprimir Jogos em ".wsquashfs" e descompactá-lo*
     * **Adicionado ferramentas para descompactar arquivos compactados. (ex: .zip, .rar)*
     * **Adicionado a aplicação **WPS Officie** para a edição de arquivos office*
     * **Adicionado o **SM Player** para reprodução de vídeos e músicas*
@@ -154,17 +154,18 @@ O comando *Alt+F4* ainda funciona para fechar as janelas abertas e os jogos, ent
 
 ***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
 
-![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Desktop_for_Batocera-logo.png?raw=true)
-
 ## 🚀 Como Desinstalar?
 * **Passo a passo:**Pressione a tecla **F1** para abrir o gerenciador de arquivos do batocera, e o desktop irá iniciar automaticamente. Aguarde!
     * **Passo 1:**No gerenciador de arquivos, no painel lateral, clique em **Aplicações**
     * **Passo 2:**Busque pelo atalho **Desistalador do Desktop for Batocera (by DRL Edition)**, e execute-o
     * **Passo 3:**Ao abrir a janela de questionamento, clique em **Yes" para desinstalar.
     * **Passo 4:**Ao clicar em **Yes** na janela anterior, abrirá uma outra perguntando se você reamente tem certeza que quer desinstalar o **Desktop for Batocera**. Basta clicar no botão **YES, I AM SURE!** e aguardar a desinstalação ser concluída.
+
    > 🔥 **!! ATENÇÃO !!** 🔥
     > Ao clicar em **Yes** e posteriormente em **YES, I AM SURE!** para desinstalar o **Desktop for Batocera**, esta ação o desinstalará por completo.
     > A ação de desinstalação é inrreversível. Caso tenha se arrependido da operação e quiser ter o **Desktop for Batocera** novamente, você terá que instalá-lo.
   
+![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Desktop_for_Batocera-logo.png?raw=true)
+
 ---
 ## 💯% Bahiano - Brasileiro 🇧🇷
