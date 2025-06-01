@@ -137,6 +137,7 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
     * **Adicionado o **SM Player** para reprodução de vídeos e músicas*
     * **Corrigido nome do ícone do Chrome*
     * **Removido os navegadores "Mozilla Firefox e Microsoft Edge" para diminuir o tamanho da instalação*
+    * **Desinstalador corrigido*
 
 * ***Adicionado um desinstalador, para caso o usuário deseje remover o "Desktop for Batocera" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)***
 ---
