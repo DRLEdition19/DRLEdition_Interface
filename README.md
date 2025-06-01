@@ -152,9 +152,9 @@ Para sair do modo desktop e voltar ao frontend do batocera, basta pressionar a t
 
 O comando *Alt+F4* ainda funciona para fechar as janelas abertas e os jogos, entretanto, esta combinação não fecha o Desktop. Para isso você obrigatoriamente deverá pressionar a tecla **F1** do seu teclado, ou os botões ***Start+Select*** do seu Joystick/gamepad.
 
-***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
+* **Atenção:**Para que a instalação seja funcional, lembre-se de que será necessário reiniciar sua máquina
 
-* **Atenção:**Para que a instalação seja funcional, lembre-se de que sera necessário reiniciar sua máquina
+***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
 
 ## 🚀 Como Desinstalar?
 * **Passo a passo:**Pressione a tecla **F1** para abrir o gerenciador de arquivos do batocera, e o desktop irá iniciar automaticamente. Aguarde!
@@ -162,8 +162,9 @@ O comando *Alt+F4* ainda funciona para fechar as janelas abertas e os jogos, ent
     * **Passo 2:**Busque pelo atalho **Desistalador do Desktop for Batocera (by DRL Edition)**, e execute-o
     * **Passo 3:**Ao abrir a janela de questionamento, clique em **Yes" para desinstalar.
     * **Passo 4:**Ao clicar em **Yes** na janela anterior, abrirá uma outra perguntando se você reamente tem certeza que quer desinstalar o **Desktop for Batocera**. Basta clicar no botão **YES, I AM SURE!** e aguardar a desinstalação ser concluída.
-    * **Atenção:**Para que a desinstalação seja funcional, lembre-se de que sera necessário reiniciar sua máquina
+    * **Atenção:**Para que a desinstalação seja funcional, lembre-se de que será necessário reiniciar sua máquina
 
+---
    > 🔥 **!! ATENÇÃO !!** 🔥
     > Ao clicar em **Yes** e posteriormente em **YES, I AM SURE!** para desinstalar o **Desktop for Batocera**, esta ação o desinstalará por completo.
     > A ação de desinstalação é inrreversível. Caso tenha se arrependido da operação e quiser ter o **Desktop for Batocera** novamente, você terá que instalá-lo.
