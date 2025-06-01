@@ -118,18 +118,26 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
 
     * **Correção de bugs*
     * **Adicionado várias ferramentas*
+    * **Google Chrome, Microsoft Edge e Mozilla Firefox implementados*
+    * **Adicionado Hardinfo, PeaZip, Sublime Text e XArchiver"
+    * **Adicionado função na barra do relógio para alteração de tema de ícones do sistema"
+    * **"File Compiler" implementado, para comprimir jogos, ou qualquer arquivo, em ".wsquashfs" para economizar espaço*
+    * **"Pack Theme" implementado, para alteração de tema de ícones do sistema*
+    * **"Screen Rec" implementado para gravação de tela*
+    * **"Shortcut Creator" implementado para possibilitar criar atalhos de aplicações flatpaks e outros*
+    * **"tint2conf" implementado, para alterar o tema da barra de tarefas*
 
 * ***Atualização - 01.06.2025***
 
     * **Correção de Bugs*
     * **Implementação Aplicações padrão para determinados formatos de arquivos*
-    * **Implementado uma ferramenta para comprimir Jogos em ".wsquashfs" e/descompactá-lo.!*
+    * **Implementado mais uma ferramenta para comprimir Jogos em ".wsquashfs" e/descompactá-lo.!*
     * **Adicionado ferramentas para descompactar arquivos compactados. (ex: .zip, .rar)*
     * **Adicionado a aplicação **WPS Officie** para a edição de arquivos office*
     * **Adicionado o **SM Player** para reprodução de vídeos e músicas*
     * **Corrigido nome do ícone do Chrome*
 
-**Adicionado um desinstalador, para caso o usuário deseje remover o "Desktop for Batocera" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)**
+* ***Adicionado um desinstalador, para caso o usuário deseje remover o "Desktop for Batocera" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)***
 ---
 
 ## 🚀 Como utilizar?
