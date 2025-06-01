@@ -19,9 +19,13 @@ curl -L bit.ly/winconfig-drl | bash
 Você irá encontrar a ferramenta dentro da coleção **Ports**
 
 # ✨ WinConfig - Manual Detalhado (DRL Edition) ✨
+
 **👨‍💻 Autor:** DRL Edition (Script modificado)
+
 **🔧 Desenvolvedor:** DRLEdition19
+
 **📅 Última Atualização:** 31-05-2025
+
 **🔗 Repositório Principal:** [DRLEdition_Interface](https://github.com/DRLEdition19/DRLEdition_Interface)
 
 Bem-vindo ao manual completo do **WinConfig - DRL Edition**! Esta ferramenta gráfica 🎮 foi criada para simplificar drasticamente a adição, configuração e gerenciamento de jogos Windows no seu Batocera Linux ou Batocera Plus.
