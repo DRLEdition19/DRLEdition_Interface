@@ -154,12 +154,15 @@ O comando *Alt+F4* ainda funciona para fechar as janelas abertas e os jogos, ent
 
 ***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
 
+* **Atenção:**Para que a instalação seja funcional, lembre-se de que sera necessário reiniciar sua máquina
+
 ## 🚀 Como Desinstalar?
 * **Passo a passo:**Pressione a tecla **F1** para abrir o gerenciador de arquivos do batocera, e o desktop irá iniciar automaticamente. Aguarde!
     * **Passo 1:**No gerenciador de arquivos, no painel lateral, clique em **Aplicações**
     * **Passo 2:**Busque pelo atalho **Desistalador do Desktop for Batocera (by DRL Edition)**, e execute-o
     * **Passo 3:**Ao abrir a janela de questionamento, clique em **Yes" para desinstalar.
     * **Passo 4:**Ao clicar em **Yes** na janela anterior, abrirá uma outra perguntando se você reamente tem certeza que quer desinstalar o **Desktop for Batocera**. Basta clicar no botão **YES, I AM SURE!** e aguardar a desinstalação ser concluída.
+    * **Atenção:**Para que a desinstalação seja funcional, lembre-se de que sera necessário reiniciar sua máquina
 
    > 🔥 **!! ATENÇÃO !!** 🔥
     > Ao clicar em **Yes** e posteriormente em **YES, I AM SURE!** para desinstalar o **Desktop for Batocera**, esta ação o desinstalará por completo.
