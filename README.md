@@ -134,10 +134,10 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
     * **Implementado mais uma ferramenta para comprimir Jogos em ".wsquashfs" e descompactá-lo*
     * **Adicionado ferramentas para descompactar arquivos compactados. (ex: .zip, .rar)*
     * **Adicionado a aplicação **WPS Officie** para a edição de arquivos office*
-    * **Adicionado o **SM Player** para reprodução de vídeos e músicas*
+    * **Adicionado apps para reprodução de vídeos e músicas*
     * **Corrigido nome do ícone do Chrome*
-    * **Removido os navegadores "SMPlayer, Mozilla Firefox e Microsoft Edge" para diminuir o tamanho da instalação*
-    * **Adicionado Visualizadores de imagem e novo reprodutor de vídeo*
+    * **Removido os apps "SMPlayer, Mozilla Firefox e Microsoft Edge" para diminuir o tamanho da instalação*
+    * **Adicionado visualizadores de imagem e novo reprodutor de vídeo*
     * **Adicionado mais um app para gravar vídeos da tela*
     * **Desinstalador corrigido*
 
