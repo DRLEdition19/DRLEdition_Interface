@@ -50,6 +50,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 **Implementado a função "Redist - Criar Ambiente ".wine""**
 
 **Adicionado um desinstalador, para caso o usuário deseje remover a ferramenta "WinConfig - Windows Game Fix" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)**
+
 ---
 # 🎮 Suporte ao Gamepad
 ---
