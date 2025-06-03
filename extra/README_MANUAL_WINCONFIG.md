@@ -464,7 +464,7 @@ O WinConfig é como um maestro que comanda outros programinhas menores para faze
 O WinConfig está sempre melhorando!
 * O WinConfig é atualizado com melhorias e novas funcionalidades (detalhes no manual completo).
 * **Datas Chave de Updates (Exemplos):**
-    * **31-03-2025:** Lançamento base.
+    * **31-03-2025:** Lançamento do projeto.
     * **02-04-2025:** Sistema de Backup '.bkpdrl', melhorias de UI e logs.
     * **10-04 & 22-04-2025:** Implementação e modos da ferramenta Redist (Instalador).
     * **22-05-2025:** Multi-idioma e correções.
