@@ -372,7 +372,7 @@ Clicando no botão `[Configurações]`, você pode mudar como o WinConfig funcio
 * **`(Redist) Modo Instalação Rápida (Personalizada):`** `Ligado` / `Desligado`
     * Muda como a ferramenta `[Redist - Instalador de Dependências]` funciona:
         * `Desligado` (Modo Normal): Copia tudo. Mais seguro, mas gasta mais espaço.
-        * `Ligado` (Modo Rápido): Usa "atalhos inteligentes" para economizar espaço. Mais rápido, mas pode não funcionar com todos os jogos.
+        * `Ligado` (Modo Rápido): Usa um método de "instalação inteligente" para economizar espaço. Mais rápido, mas pode não funcionar com todos os jogos.
 
 * **`Versão do Batocera (afeta lançador/compressão):`** `Batocera Linux` / `Batocera Plus`.
     * Diga qual Batocera você usa. Isso muda um pouco como os jogos são preparados e compactados.
