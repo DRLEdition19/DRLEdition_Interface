@@ -24,7 +24,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 
 **🔧 Desenvolvedor:** DRLEdition19
 
-**📅 Última Atualização:** 31-05-2025
+**📅 Última Atualização:** 05-06-2025
 
 **🔗 Repositório Principal:** [DRLEdition_Interface](https://github.com/DRLEdition19/DRLEdition_Interface)
 
@@ -504,6 +504,13 @@ O WinConfig está sempre melhorando!
 **Implementado a função "Redist - Criar Ambiente ".wine""*
 
 **Adicionado um desinstalador, para caso o usuário deseje remover a ferramenta "WinConfig - Windows Game Fix" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)*
+
+
+***Atualização - 05.06.2025***
+
+**Correção de Bugs*
+
+**Aumento da capacidade de verificação (modo recursivo) de lançadores personalizados wine, para a instalação de dependências.*
 
 ---
 ## 10. 🎮 Suporte ao Gamepad
