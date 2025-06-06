@@ -55,6 +55,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 ***Atualização - 05.06.2025***
 
 **Correção de Bugs*
+
 **Aumento da capacidade de verificação (modo recursivo) de lançadores personalizados wine, para a instalação de dependências.*
 
 ---
