@@ -105,6 +105,7 @@ batocera-save-overlay 300
 mkdir -p $TEMP_DIR
 mkdir -p $EXTRACT_DIR
 mkdir -p $PORTS_DIR
+clear
 
 # Download the DRL file
 echo "Downloading the DRL file..."
