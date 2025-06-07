@@ -90,7 +90,7 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Desktop_for_Batocera by DRL Edition."
+echo "Welcome to the automatic installer for the Desktop_for_Batocera 6.0 by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/Desktop_for_Batocera"
