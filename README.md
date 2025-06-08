@@ -168,7 +168,7 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
 
     * **Correção de Bugs*
     * **Implementado nova função para alterar o tema das bordas das janelas. Há um total de 59 temas disponível para escolher. Para utilizar esta nova função, basta executar o app "Pack Theme", ou clicar com o botão direito do mouse sobre a barra do relório. (Ao aplicar um novo tema, será necessário reiniciar sua máquina para que as alterações tenham efeito.)*
-    * **Para evitar problemas e otimizar ainda mais o sistema, foi removido função de editar mimetypes, a fim de evitar conflitos no sistema de associação de atalhos.*
+    * **Para evitar problemas e otimizar ainda mais o sistema, foi removido a função de editar mimetypes, a fim de evitar conflitos no sistema de associação de atalhos.*
   
 ---
 
