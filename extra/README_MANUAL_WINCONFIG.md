@@ -461,23 +461,20 @@ O WinConfig é como um maestro que comanda outros programinhas menores para faze
 
 ## 9. 📜 Novidades das Versões e Onde Pedir Ajuda
 
-O WinConfig está sempre melhorando!
-* O WinConfig é atualizado com melhorias e novas funcionalidades (detalhes no manual completo).
-* **Datas Chave de Updates (Exemplos):**
-    * **31-03-2025:** Lançamento do projeto.
-    * **02-04-2025:** Sistema de Backup '.bkpdrl', melhorias de UI e logs.
-    * **10-04 & 22-04-2025:** Implementação e modos da ferramenta Redist (Instalador).
-    * **22-05-2025:** Multi-idioma e correções.
-    * **31-05-2025:** Lançamento da ferramenta "Redist - Criar ambiente ".wine"". Também foi implementado um desinstalador para caso o susuário deseje desinstalar esta ferramenta do sistema.
-
+**O WinConfig está sempre melhorando!**
+* **O WinConfig é atualizado com melhorias e novas funcionalidades (detalhes no manual completo).
 **Precisa de Ajuda?**
-
 * **Dentro do WinConfig:** O botão `[Ajuda]` tem guias como este.
 
 ---
 ## 🧩 Implementações e Atualizações
+***Atualização - 31.03.2025***
+    * **Lançamento base do projeto para o público*
+***Atualização - 02.04.2025***
+    * **Sistema de Backup '.bkpdrl', melhorias de UI e logs*
+***Atualização - 10.04.2025 a 22.04.2025***
+    * **Desenvolvimento e implementação da ferramenta Redist - Instalador de dependências.*
 ***Atualização - 22.05.2025***
-
 **Durante a instalação, será perguntado qual idioma você deseja para a ferramenta.**
 * **Esta ferramenta agora conta com os idiomas:*
     * **Portugês Brasil*
@@ -485,18 +482,13 @@ O WinConfig está sempre melhorando!
     * **Espanhol*
     * **Italiano*
     * **Francês*
-
 ***Atualização - 31.05.2025***
-
 * **Correção de Bugs*
 * **Implementado a função "Redist - Criar Ambiente ".wine""*
 * **Adicionado um desinstalador, para caso o usuário deseje remover a ferramenta "WinConfig - Windows Game Fix" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)*
-
-
 ***Atualização - 05.06.2025***
-
 * **Correção de Bugs*
-* **Aumento da capacidade de verificação (modo recursivo) de lançadores personalizados wine, para a instalação de dependências.*
+* **Aumento da capacidade de verificação (modo recursivo) e varredura completa de lançadores personalizados wine, para a instalação de dependências mais preciso, assertivo e funcional.*
 
 ---
 ## 10. 🎮 Suporte ao Gamepad
@@ -506,7 +498,7 @@ O WinConfig está sempre melhorando!
 **O Winconfig - Windows Game Fix - já conta com um recurso de reconhecimento do gamepad, no entanto, a configuração de mapeamento ainda continua em fase de testes, mas você poderá realizar testes e personalizá-lo.**
 
 ![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/joytick.jpg?raw=true)
-
+.
 ***Estas configurações de mapeamento abaixo, são correspondentes com os botões do gamepad ilustrado acima.***
 
 ---
@@ -540,7 +532,7 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 
 ***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
 
-![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera%20-%20logo.png?raw=true)
+!.[image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera%20-%20logo.png?raw=true)
 
 ---
 ## 💯% Bahiano - Brasileiro 🇧🇷
