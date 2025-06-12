@@ -462,7 +462,7 @@ O WinConfig é como um maestro que comanda outros programinhas menores para faze
 ## 9. 📜 Novidades das Versões e Onde Pedir Ajuda
 
 **O WinConfig está sempre melhorando!**
-* **O WinConfig é atualizado com melhorias e novas funcionalidades (detalhes no manual completo).
+* **O WinConfig é atualizado com melhorias e novas funcionalidades, que estão em detalhes no manual completo.*
 **Precisa de Ajuda?**
 * **Dentro do WinConfig:** O botão `[Ajuda]` tem guias como este.
 
