@@ -475,42 +475,28 @@ O WinConfig está sempre melhorando!
 * **Dentro do WinConfig:** O botão `[Ajuda]` tem guias como este.
 
 ---
-
-***Obrigado por usar o WinConfig - DRL Edition! Esperamos que ele torne sua experiência com jogos Windows no Batocera muito mais agradável.***
-***Winconfig, 2025 by DRL Edition***
-
----
 ## 🧩 Implementações e Atualizações
 ***Atualização - 22.05.2025***
 
 **Durante a instalação, será perguntado qual idioma você deseja para a ferramenta.**
-**Esta ferramenta agora conta com os idiomas:*
-
-**Portugês Brasil*
-
-**Inglês*
-
-**Espanhol*
-
-**Italiano*
-
-**Francês*
-
+* **Esta ferramenta agora conta com os idiomas:*
+    * **Portugês Brasil*
+    * **Inglês*
+    * **Espanhol*
+    * **Italiano*
+    * **Francês*
 
 ***Atualização - 31.05.2025***
 
-**Correção de Bugs*
-
-**Implementado a função "Redist - Criar Ambiente ".wine""*
-
-**Adicionado um desinstalador, para caso o usuário deseje remover a ferramenta "WinConfig - Windows Game Fix" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)*
+* **Correção de Bugs*
+* **Implementado a função "Redist - Criar Ambiente ".wine""*
+* **Adicionado um desinstalador, para caso o usuário deseje remover a ferramenta "WinConfig - Windows Game Fix" (Você poderá encontrar este desinstalador dentro da pasta de aplicações do batocera)*
 
 
 ***Atualização - 05.06.2025***
 
-**Correção de Bugs*
-
-**Aumento da capacidade de verificação (modo recursivo) de lançadores personalizados wine, para a instalação de dependências.*
+* **Correção de Bugs*
+* **Aumento da capacidade de verificação (modo recursivo) de lançadores personalizados wine, para a instalação de dependências.*
 
 ---
 ## 10. 🎮 Suporte ao Gamepad
