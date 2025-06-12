@@ -469,12 +469,15 @@ O WinConfig é como um maestro que comanda outros programinhas menores para faze
 ---
 ## 🧩 Implementações e Atualizações
 ***Atualização - 31.03.2025***
+
     * **Lançamento base do projeto para o público*
 
 ***Atualização - 02.04.2025***
+
     * **Sistema de Backup '.bkpdrl', melhorias de UI e logs*
 
 ***Atualização - 10.04.2025 a 22.04.2025***
+
     * **Desenvolvimento e implementação da ferramenta Redist - Instalador de dependências.*
 
 ***Atualização - 22.05.2025***
