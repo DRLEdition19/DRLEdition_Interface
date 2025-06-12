@@ -469,19 +469,20 @@ O WinConfig é como um maestro que comanda outros programinhas menores para faze
 ---
 ## 🧩 Implementações e Atualizações
 ***Atualização - 31.03.2025***
-* **
-    * **Lançamento base do projeto para o público*
+* **Correção de Bugs*
+* **Lançamento base do projeto para o público*
 
 ***Atualização - 02.04.2025***
-* **
-    * **Sistema de Backup '.bkpdrl', melhorias de UI e logs*
+* **Correção de Bugs*
+* **Sistema de Backup '.bkpdrl', melhorias de UI e logs*
 
 ***Atualização - 10.04.2025 a 22.04.2025***
-* **
-    * **Desenvolvimento e implementação da ferramenta Redist - Instalador de dependências.*
+* **Correção de Bugs*
+* **Desenvolvimento e implementação da ferramenta Redist - Instalador de dependências*
 
 ***Atualização - 22.05.2025***
 
+* **Correção de Bugs*
 **Durante a instalação, será perguntado qual idioma você deseja para a ferramenta.**
 * **Esta ferramenta agora conta com os idiomas:*
     * **Portugês Brasil*
