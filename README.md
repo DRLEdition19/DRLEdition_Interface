@@ -72,7 +72,10 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 ***Atualização - 21.06.2025***
 
 * **Correção de Bugs*
-* **Lançamento da ferramenta "Redist - Winetricks".*
+* **🍷 NOVA FUNCIONALIDADE: Integração completa do REDIST - WINETRICKS*
+* **Interface gráfica avançada para gerenciamento de componentes Windows*
+* **Gerenciamento de prefixos Wine com backup e restauração*
+* **Controle granular sobre DLLs, fontes, configurações e aplicativos Windows*
 
 ---
 # 🎮 Suporte ao Gamepad
