@@ -339,12 +339,6 @@ Pense nesta ferramenta como uma "montadora de jogos". Ela pega os arquivos do se
 
 O **REDIST - WINETRICKS** é uma funcionalidade avançada integrada ao WinConfig que oferece uma interface gráfica para o Winetricks, uma ferramenta poderosa para instalar e gerenciar componentes do Windows dentro dos prefixos Wine utilizados pelos jogos no Batocera.
 
-* **Nome:** REDIST - WINETRICKS
-* **Tipo:** Script Bash (integrado ao WinConfig)
-* **Versão:** 3.0
-* **Data:** 21 de Junho de 2025
-* **Função Principal:** Gerenciar componentes Windows (DLLs, fontes, configurações) dentro dos prefixos Wine dos jogos no Batocera.
-
 Esta ferramenta complementa perfeitamente as funcionalidades básicas do WinConfig, oferecendo controle granular sobre:
 * **DLLs específicas** (bibliotecas dinâmicas como DirectX avançado, componentes .NET específicos)
 * **Fontes do Windows** (Arial, Times New Roman, Courier New, etc.)
@@ -360,7 +354,6 @@ Esta ferramenta complementa perfeitamente as funcionalidades básicas do WinConf
 
 **📋 Pré-requisitos:**
 
-* Ter o WinConfig instalado no seu Batocera
 * Ter jogos de Windows instalados e, **preferencialmente**, executados pelo menos uma vez para que o Batocera crie o prefixo Wine necessário
 * Conexão com a internet (para baixar componentes quando necessário)
 
@@ -368,9 +361,8 @@ Esta ferramenta complementa perfeitamente as funcionalidades básicas do WinConf
 
 **Passo 1: Acessando o REDIST - WINETRICKS**
 
-1. Inicie o Batocera e navegue até a coleção **"Ports"**.
-2. Execute o aplicativo **"WinConfig - Windows Game Fix"**.
-3. Na tela principal, você verá o novo botão **`[Instalar Dependências Winetricks]`**.
+1. Execute o aplicativo **"WinConfig - Windows Game Fix"**.
+2. Na tela principal, você verá o novo botão **`[Instalar Dependências Winetricks]`**.
 
 **Passo 2: Navegando pelos seus Jogos**
 
@@ -429,7 +421,6 @@ No menu principal do WinConfig, após selecionar um jogo, o botão **`[Gerenciar
 
 * **💾 Backups:** Realizar backups regulares dos seus prefixos Wine é crucial. Antes de fazer qualquer alteração significativa com o Winetricks, faça um backup do prefixo do jogo através da opção "Gerenciar Jogo".
 * **🔧 Solução de Problemas:** Se um jogo apresentar problemas após a instalação ou remoção de componentes com o Winetricks, consulte o arquivo de log em `/userdata/saves/winetricks_manager_cache/winetricks-manager.log` para identificar possíveis erros. Você também pode tentar restaurar um backup anterior do prefixo do jogo.
-* **⚠️ Remoção de Componentes:** Seja extremamente cauteloso ao remover componentes com o Winetricks. A remoção inadequada pode corromper o prefixo Wine e exigir que você o apague e comece a configuração do jogo novamente. A ferramenta exibirá um aviso antes de tentar remover um componente.
 * **📚 Documentação do Winetricks:** Para informações mais detalhadas sobre os componentes disponíveis no Winetricks e suas funções, você pode consultar a documentação oficial do Winetricks (geralmente disponível online).
 
 ---
