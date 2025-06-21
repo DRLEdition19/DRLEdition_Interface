@@ -30,6 +30,7 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 
 **O WinConfig está sempre melhorando!**
 * **O WinConfig é atualizado com melhorias e novas funcionalidades, que estão em detalhes no manual completo.*
+
 **Precisa de Ajuda?**
 * **Dentro do WinConfig:** O botão `[Ajuda]` tem guias como este.
 
