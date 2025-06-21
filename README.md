@@ -241,7 +241,7 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 
 **Observação:**
 
-Para fechar o desktop por completo, utilizando o controle jopystick ou gamepad, basta pressionar simultaneamente os botões ***Start+Select***, caso não funcione, pressione novamente o desktop será encerrado.
+Para fechar o desktop por completo, utilizando o controle jopystick ou gamepad, basta pressionar simultaneamente os botões ***Start+Select***. Caso não funcione, pressione esta combinação de botões novamente para que o desktop seja encerrado.
 
 ---
 
