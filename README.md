@@ -69,6 +69,11 @@ Você irá encontrar a ferramenta dentro da coleção **Ports**
 * **Correção de Bugs*
 * **Aumento da capacidade de verificação (modo recursivo) e varredura completa de lançadores personalizados wine, para a instalação de dependências mais preciso, assertivo e funcional.*
 
+***Atualização - 21.06.2025***
+
+* **Correção de Bugs*
+* **Lançamento da ferramenta "Redist - Winetricks".*
+
 ---
 # 🎮 Suporte ao Gamepad
 ---
