@@ -104,7 +104,7 @@ Quando você abre o WinConfig, a primeira tela que aparece é como um explorador
   * **Setas para Cima e Baixo:** Escolhem qual pasta ou arquivo destacar.
   * **Enter:** Se uma pasta estiver destacada, você entra nela. Se for um arquivo, é como apertar `[Selecionar]`.
 * **🎮 Com um Controle de Videogame:**
-  * Sim, você pode! Mas precisa de um programa chamado AntiMicroX configurado. O WinConfig já sugere um arquivo de configuração para isso.
+  * Sim, você pode! Mas precisa de um programa chamado AntiMicroX, o qual já vai prontinho e configurado para você. O WinConfig já sugere um arquivo de configuração para isso, então você não precisa se preocupar com isso.
 
 ### 3.2 Entendendo os Botões Principais
 
@@ -120,7 +120,7 @@ Na parte de baixo da tela, você verá alguns botões importantes:
 
 * **`[Redist - Criar ambiente ".wine"]`:** Esta é uma ferramenta super útil para montar uma "pasta de jogo completa" a partir do zero. Ela cria um espaço organizado para seu jogo, já com alguns "programinhas extras" básicos.
 
-* **`[Instalar Dependências Winetricks]`:** **NOVA FUNCIONALIDADE!** Abre uma interface gráfica avançada para o Winetricks, permitindo gerenciar componentes Windows (DLLs, fontes, configurações) de forma mais detalhada e precisa.
+* **`[Redist - Winetricks]`:** **NOVA FUNCIONALIDADE!** Abre uma interface gráfica avançada para o Winetricks, permitindo gerenciar componentes Windows (DLLs, fontes, configurações) de forma mais detalhada e precisa.
 
 * **`[Restaurar Backup de Jogos]`:** Se você fez uma cópia de segurança de algum jogo com o WinConfig (um arquivo `.bkpdrl`), este botão te ajuda a trazer esse jogo de volta.
 
@@ -362,7 +362,7 @@ Esta ferramenta complementa perfeitamente as funcionalidades básicas do WinConf
 **Passo 1: Acessando o REDIST - WINETRICKS**
 
 1. Execute o aplicativo **"WinConfig - Windows Game Fix"**.
-2. Na tela principal, você verá o novo botão **`[Instalar Dependências Winetricks]`**.
+2. Na tela principal, você verá o novo botão **`[Redist - Winetricks]`**.
 
 **Passo 2: Navegando pelos seus Jogos**
 
@@ -372,7 +372,7 @@ Esta ferramenta complementa perfeitamente as funcionalidades básicas do WinConf
 
 **Passo 3: Instalando Dependências com Winetricks**
 
-1. Com o jogo desejado selecionado, clique no botão **`[Instalar Dependências Winetricks]`**.
+1. Com o jogo desejado selecionado, clique no botão **`[Redist - Winetricks]`**.
 2. O script tentará localizar automaticamente o "Prefixo Wine" associado ao jogo selecionado. Um prefixo Wine é um ambiente isolado do Windows onde as configurações e dependências do jogo são armazenadas.
 3. Uma nova janela com o título "Winetricks Manager - [Nome do Jogo]" será exibida, listando diversas categorias de componentes do Windows:
 
@@ -414,7 +414,7 @@ No menu principal do WinConfig, após selecionar um jogo, o botão **`[Gerenciar
   * **🔄 Atualizar o Winetricks:** Baixa e instala a versão mais recente do Winetricks, o que pode ser útil para ter acesso a componentes mais recentes.
   * **🧹 Limpar o cache de localização dos prefixos:** Use esta opção se o WinConfig não estiver encontrando os prefixos Wine dos seus jogos, por exemplo, após mover ou renomear pastas.
   * **🗂️ Limpar o cache de listas de componentes:** Força o WinConfig a baixar novamente as listas de componentes disponíveis no Winetricks (DLLs, fontes, etc.).
-  * **ℹ️ Mostrar informações do sistema:** Exibe informações úteis sobre a sua instalação do Batocera, hardware e versões do Wine e Winetricks.
+  * **ℹ️ Mostrar informações do sistema:** Exibe informações úteis sobre a sua instalação do Batocera, hardware e Winetricks.
 * **❓ Ajuda:** Abre este manual que você está lendo.
 
 **🛡️ Dicas e Avisos Importantes:**
