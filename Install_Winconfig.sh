@@ -174,10 +174,6 @@ chmod 777 /userdata/system/configs/bat-drl/AntiMicroX/antimicrox.sh
 # Clean up
 echo "Cleaning up..."
 rm -rf $TEMP_DIR
-rm -f "/userdata/system/.local/share/applications/WinConfig.desktop"
-rm -f "/userdata/system/.local/share/applications/Remover_WinConfig.desktop"
-rm -f "/userdata/system/configs/bat-drl/WindowsGameFix-icon.png"
-rm -f "/userdata/system/configs/bat-drl/Remover_WinConfig.png"
 
 # Save changes
 echo "Saving changes..."
