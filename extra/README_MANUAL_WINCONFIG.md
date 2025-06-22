@@ -515,7 +515,7 @@ Aqui vão algumas "receitas" rápidas:
 * **Situação 5: Meu jogo não funciona mesmo após instalar dependências básicas.**
   1. Abra o WinConfig.
   2. Selecione o jogo problemático.
-  3. Clique em `[Instalar Dependências Winetricks]`.
+  3. Clique em `[Redist - Winetricks]`.
   4. Navegue pelas categorias (dlls, fonts, settings) e instale componentes específicos que o jogo pode precisar.
   5. Teste o jogo após cada instalação.
 
@@ -536,8 +536,8 @@ Aqui vão algumas "receitas" rápidas:
   * Cópias de Segurança: `/userdata/system/configs/bat-drl/WinConfig/backup/` (normalmente)
   * Cache do Winetricks: `/userdata/saves/winetricks_manager_cache/`
   * Logs do Winetricks: `/userdata/saves/winetricks_manager_cache/winetricks-manager.log`
-  * Atalho no menu do Batocera: `/userdata/system/.local/share/applications/WinConfig.desktop`
-  * Desinstalador no menu do Batocera: `/userdata/system/.local/share/applications/Remover_WinConfig.desktop`
+  * Atalho no menu do Batocera: `~/applications/WinConfig.desktop`
+  * Desinstalador no menu do Batocera: `~/applications/Remover_WinConfig.desktop`
 
 * **Pasta dos "Programinhas Extras" (Redist):**
   * Os arquivos que o WinConfig usa para instalar DirectX, etc., precisam estar na pasta: `/userdata/system/configs/bat-drl/redist/`. Você precisa colocar os instaladores ou arquivos desses componentes lá.
