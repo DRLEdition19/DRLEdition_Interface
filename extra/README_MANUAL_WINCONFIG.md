@@ -544,7 +544,6 @@ Aqui vão algumas "receitas" rápidas:
 
 * **Prefixos Wine:**
   * Cada jogo tem seu próprio "ambiente Windows" isolado, chamado de prefixo Wine.
-  * Localizações comuns: `/userdata/saves/wine/` ou `/userdata/saves/windows/`
   * O Winetricks trabalha diretamente nesses prefixos.
 
 * **Nomes das Pastas e Arquivos:**
