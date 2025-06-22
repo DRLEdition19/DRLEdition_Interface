@@ -466,18 +466,8 @@ Clicando no botão `[Configurações]`, você pode mudar como o WinConfig funcio
 
 * **`Escolha seu Idioma (...)`:** Permite mudar o idioma do WinConfig (Português, Inglês, Espanhol, Italiano, Francês). Você precisará fechar e abrir o WinConfig de novo para ver a mudança.
 
-**🍷 Configurações do Winetricks:**
-
-* **`Atualizar Winetricks automaticamente:`** `Ligado` / `Desligado`
-  * Se "Ligado", o WinConfig verifica e atualiza automaticamente o Winetricks quando necessário.
-
-* **`Cache de componentes Winetricks:`** Você escolhe a pasta.
-  * Define onde os componentes baixados pelo Winetricks ficam armazenados para reuso.
-
 * **Botões Extras na Tela de Configurações:**
   * **`[Abrir AntiMicroX]`:** Abre o programa AntiMicroX para você ajustar os controles do seu joystick.
-  * **`[Atualizar Winetricks]`:** Força a atualização do Winetricks para a versão mais recente.
-  * **`[Limpar Cache Winetricks]`:** Remove arquivos temporários e cache do Winetricks.
   * **`[Restaurar Configurações Padrão]`:** Faz todas as opções voltarem para como eram no começo.
   * **`[Monitor de Processos]`:** Mostra uma telinha com informações sobre o uso do processador do seu Batocera.
   * **`[Salvar Configurações]`:** Guarda as mudanças que você fez e fecha a tela de configurações.
