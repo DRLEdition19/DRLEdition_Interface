@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- Diretórios e Configurações Globais ---
-readonly ATALHO="/usr/share/applications/WinConfig.desktop"
+readonly ATALHO="/userdata/system/.local/share/applications/WinConfig.desktop"
 readonly TARGET_DIR="/userdata/roms/ports"
 readonly TARGET_FILE="gamelist.xml"
 readonly GAMELIST_FILE_PATH="${TARGET_DIR}/${TARGET_FILE}"
