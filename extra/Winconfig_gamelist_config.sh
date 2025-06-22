@@ -317,7 +317,7 @@ while true; do
 done
 
 # 4. Executar comando `batocera-save-overlay`
-batocera-save-overlay
+# batocera-save-overlay
 clear
 echo "Processo concluído com sucesso! / Process completed successfully! / ¡Proceso completado exitosamente! / Processo completato con successo! / Processus terminé avec succès!"
 
