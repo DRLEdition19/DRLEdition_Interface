@@ -70,7 +70,7 @@ Name=WinConfig - Windows Game Fix
 Exec=winconfig-redist-pt
 Terminal=false
 Categories=Utility;Application;batocera.linux;
-Icon=/userdata/system/configs/bat-drl/WindowsGameFix-icon.png
+Icon=/usr/share/icons/batocera/WindowsGameFix-icon.png
 EOF
 
     # Ajusta as permissões
@@ -110,7 +110,7 @@ Name=WinConfig - Windows Game Fix
 Exec=winconfig-redist-en
 Terminal=false
 Categories=Utility;Application;batocera.linux;
-Icon=/userdata/system/configs/bat-drl/WindowsGameFix-icon.png
+Icon=/usr/share/icons/batocera/WindowsGameFix-icon.png
 EOF
 
     # Ajusta as permissões
@@ -147,7 +147,7 @@ Name=WinConfig - Windows Game Fix
 Exec=winconfig-redist-es
 Terminal=false
 Categories=Utility;Application;batocera.linux;
-Icon=/userdata/system/configs/bat-drl/WindowsGameFix-icon.png
+Icon=/usr/share/icons/batocera/WindowsGameFix-icon.png
 EOF
 
     # Ajusta as permissões
@@ -184,7 +184,7 @@ Name=WinConfig - Windows Game Fix
 Exec=winconfig-redist-it
 Terminal=false
 Categories=Utility;Application;batocera.linux;
-Icon=/userdata/system/configs/bat-drl/WindowsGameFix-icon.png
+Icon=/usr/share/icons/batocera/WindowsGameFix-icon.png
 EOF
 
     # Ajusta as permissões
@@ -221,7 +221,7 @@ Name=WinConfig - Windows Game Fix
 Exec=winconfig-redist-fr
 Terminal=false
 Categories=Utility;Application;batocera.linux;
-Icon=/userdata/system/configs/bat-drl/WindowsGameFix-icon.png
+Icon=/usr/share/icons/batocera/WindowsGameFix-icon.png
 EOF
 
     # Ajusta as permissões
