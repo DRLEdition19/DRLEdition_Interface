@@ -101,7 +101,8 @@ PORTS_DIR="/userdata/roms/ports"
 
 # Create the temporary directories
 echo "Creating temporary directories..."
-batocera-save-overlay 300
+# batocera-save-overlay 300
+batocera-save-overlay
 mkdir -p $TEMP_DIR
 mkdir -p $EXTRACT_DIR
 mkdir -p $PORTS_DIR
@@ -119,7 +120,8 @@ fi
 
 # Extract the squashfs file
 echo "Extracting the DRL file..."
-unsquashfs -f -d "$EXTRACT_DIR" "$DRL_FILE"
+# unsquashfs -f -d "$EXTRACT_DIR" "$DRL_FILE"
+unsquashfs -f -d "$DEST_DIR" "$DRL_FILE"
 
 # Check if extraction was successful
 if [ $? -ne 0 ]; then
@@ -129,8 +131,8 @@ if [ $? -ne 0 ]; then
 fi
 
 # Copia forçada dos arquivos extraídos para o diretório de destino, com sobrescrita
-echo "Copying files to the system (forced overwrite)..."
-cp -rf "$EXTRACT_DIR"/* "$DEST_DIR"
+# echo "Copying files to the system (forced overwrite)..."
+# cp -rf "$EXTRACT_DIR"/* "$DEST_DIR"
 
 # Cria links simbólicos (adicione comandos específicos aqui, se necessário)
 
