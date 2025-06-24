@@ -260,7 +260,6 @@ rm -rf "$TEMP_DIR"
 batocera-save-overlay
 clear
 echo "Installation completed successfully."
-echo "For the Desktop to work properly, you will need to restart your machine."
 echo "Android 1.0 by DRL Edition"
 
 exit 0
