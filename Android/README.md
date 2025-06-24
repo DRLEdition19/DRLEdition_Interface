@@ -1,4 +1,4 @@
-# 🎮 Android - para batocera
+# 🎮 Android para batocera
 
 Olá! 👋
 
