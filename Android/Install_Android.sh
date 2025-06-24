@@ -226,11 +226,6 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Ports Script Creation
-echo "Creating ports script..."
-echo "$PORT_SCRIPT_CONTENT" > "$PORT_SCRIPT_PATH" || error_exit "Failed to create $PORT_SCRIPT_PATH"
-chmod +x "$PORT_SCRIPT_PATH" || error_exit "Failed to make $PORT_SCRIPT_PATH executable."
-echo "Ports script created."
 
 # gamelist.xml Update
 echo "Updating gamelist.xml..."
