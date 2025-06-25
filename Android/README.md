@@ -6,7 +6,7 @@ Seja bem vindo ao projeto de instalação do Android para batocera!
 
 Este projeto possui todos os recursos necessários para fornecer uma ferramenta totalmente funcional para seu batocera.
 
-![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera.png?raw=true)
+![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/Android/Android-thumb.png?raw=true)
 
 ## 🚀 Instruções de instalação
 
@@ -60,7 +60,7 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 
 ***Esta ferramenta ainda está em fase de testes e desenvolvimento para melhoria contínua, e portanto você poderá encontrar bugs.***
 
-![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/extra/Windows%20Game%20Fix%20on%20Batocera%20-%20logo.png?raw=true)
+![image](https://github.com/DRLEdition19/DRLEdition_Interface/blob/main/Android/Android-marquee.png?raw=true)
 
 ---
 ## 💯% Bahiano - Brasileiro 🇧🇷
