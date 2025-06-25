@@ -90,7 +90,7 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Android 1.0 by DRL Edition."
+echo "Welcome to the automatic installer for the Android 1.2 by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/Android"
