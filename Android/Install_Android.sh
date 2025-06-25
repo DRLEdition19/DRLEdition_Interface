@@ -90,7 +90,7 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Android 1.2 by DRL Edition."
+echo "Welcome to the automatic installer for the Android 5.0 by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/Android"
@@ -129,7 +129,7 @@ Developer: DRL Edition 19
 		<favorite>true</favorite>
 		<lang>en</lang>
 		<sortname>1 =- ${APP_NAME}</sortname>
-		<genreid>0</genreid>
+		<genreid>Android For Batocera</genreid>
 		<screenshot>./images/${APP_EXEC}-thumb.png</screenshot>
 	</game>"
 
@@ -206,7 +206,7 @@ clear
 
 # Download the DRL file
 echo "Downloading the DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_1.0.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.0.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -255,6 +255,6 @@ rm -rf "$TEMP_DIR"
 batocera-save-overlay
 clear
 echo "Installation completed successfully."
-echo "Android 1.0 by DRL Edition"
+echo "Android 5.0 by DRL Edition"
 
 exit 0
