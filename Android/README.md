@@ -53,6 +53,7 @@ Confira na tabela abaixo o que cada botão mágico do seu controle faz:
 | ➖ **SELECT**                | BOTÃO "ALT" |
 | ↖️ **LB / L1**        | Botão Esquerdo do Mouse / Ação Secundária 1 |
 | ↗️ **RB / B2**       | Botão Direito do Mouse / Ação Secundária 2 |
+| ⬇️ **R3**       | Sai do modo tela cheia / Combinação das teclas "Ctrl+Alt+F" |
 
 ---
 
