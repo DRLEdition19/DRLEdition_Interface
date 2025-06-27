@@ -209,7 +209,7 @@ mkdir -p "/userdata/system/configs/bat-drl/Android"
 clear
 
 # Download the DRL file
-echo "Downloading the Android file..."
+echo "Downloading the Android file (Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso)..."
 curl -L -o $DEST_FILE $URL_ISO
 clear
 echo "Downloading the DRL file..."
