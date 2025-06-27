@@ -113,6 +113,7 @@ GAMELIST_ENTRY_CONTENT="	<game>
 		<desc>=========================================
 Info: ${APP_NAME} for Batocera
 Developer: DRL Edition 19
+Acknowledgements: KevoBatoYT
 =========================================</desc>
 		<image>./images/${APP_EXEC}-thumb.png</image>
 		<marquee>./images/${APP_EXEC}-marquee.png</marquee>
@@ -211,7 +212,7 @@ echo "Downloading the Android file..."
 curl -L -o $DEST_FILE $URL_ISO
 clear
 echo "Downloading the DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.0.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.5.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -260,6 +261,6 @@ rm -rf "$TEMP_DIR"
 batocera-save-overlay
 clear
 echo "Installation completed successfully."
-echo "Android 5.0 by DRL Edition"
+echo "Android 5.5 by DRL Edition"
 
 exit 0
