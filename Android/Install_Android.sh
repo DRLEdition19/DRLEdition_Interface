@@ -104,6 +104,8 @@ APP_NAME="Android"
 APP_EXEC="Android"
 PORT_SCRIPT_PATH="${PORTS_DIR}/${APP_EXEC}.sh"
 PORT_SCRIPT_NAME="${APP_EXEC}.sh"
+DEST_FILE="/userdata/system/configs/bat-drl/Android/Android.iso"
+URL_ISO="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Generic/Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso?viasf=1"
 
 GAMELIST_ENTRY_CONTENT="	<game>
 		<path>./${PORT_SCRIPT_NAME}</path>
@@ -205,6 +207,9 @@ mkdir -p $PORTS_DIR
 clear
 
 # Download the DRL file
+echo "Downloading the Android file..."
+curl -L -o $DEST_FILE $URL_ISO
+clear
 echo "Downloading the DRL file..."
 curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.0.DRL"
 
