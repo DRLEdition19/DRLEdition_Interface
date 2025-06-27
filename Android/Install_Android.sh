@@ -84,6 +84,7 @@ echo ""
 echo -ne "${PURPLE}"  # Cor roxa para a mensagem final
 type_text "Thank you for running this script!"  
 type_text "Developed by DRLEdition19"  
+type_text "Acknowledgements: KevoBatoYT"
 type_text "The installation will start in a few moments. Please wait..."
 sleep 2
 clear
