@@ -205,6 +205,7 @@ batocera-save-overlay
 mkdir -p $TEMP_DIR
 mkdir -p $EXTRACT_DIR
 mkdir -p $PORTS_DIR
+mkdir -p "/userdata/system/configs/bat-drl/Android"
 clear
 
 # Download the DRL file
