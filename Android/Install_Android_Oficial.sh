@@ -213,6 +213,18 @@ clear
 # Download the DRL file
 
 
+
+
+echo # Blank line for better readability
+
+# --- VERIFICATION AND DOWNLOAD BLOCK ---
+echo "Checking if the file needs to be downloaded: $DEST_FILE"
+
+# Check if the destination file does NOT exist
+if [ ! -f "$DEST_FILE" ]; then
+    # If it doesn't exist, start the download process
+    echo "File not found. Starting download from $URL..."
+    
 # --- USER VERSION SELECTION ---
 echo "Which version of Bliss OS would you like to install?"
 echo "  1) Generic Version (Recommended for most hardware)"
@@ -243,16 +255,6 @@ else
     URL=$URL_ISO_GO
 fi
 
-echo # Blank line for better readability
-
-# --- VERIFICATION AND DOWNLOAD BLOCK ---
-echo "Checking if the file needs to be downloaded: $DEST_FILE"
-
-# Check if the destination file does NOT exist
-if [ ! -f "$DEST_FILE" ]; then
-    # If it doesn't exist, start the download process
-    echo "File not found. Starting download from $URL..."
-
     # Download the file
     if curl -L -o "$DEST_FILE" "$URL"; then
         echo "Download completed successfully!"
@@ -261,6 +263,7 @@ if [ ! -f "$DEST_FILE" ]; then
         echo "The script cannot continue without the file. Exiting."
         exit 1 # Exits the script because the required file could not be obtained
     fi
+
 else
     # If the file already exists, just inform and continue
     echo "File already exists. Downloading the ISO is not necessary. Continuing installation..."
