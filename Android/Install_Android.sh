@@ -15,3 +15,4 @@ xterm -fs 14 -fg white -bg black -fa "Monospace" -en UTF-8 -sb -rightbar -e bash
 rm -r -f /userdata/tmp/Install_Android_Oficial.sh
 
 echo "Installation completed successfully."
+exit 0
