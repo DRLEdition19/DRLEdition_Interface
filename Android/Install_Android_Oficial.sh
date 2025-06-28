@@ -231,7 +231,7 @@ if [ ! -f "$DEST_FILE" ]; then
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
 echo "Which version of Android would you like to install?"
 echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
-echo "  2) BlissOS 16 GO Version (Optimized for low power devices)"
+echo "  2) BlissOS 16 GO Version (Optimized for computers with low processing power and RAM)"
 echo
 
 # Loop para garantir que o usuário insira uma opção válida
