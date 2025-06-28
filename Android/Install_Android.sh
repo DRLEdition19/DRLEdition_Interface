@@ -1,7 +1,7 @@
 #!/bin/bash
 # Download do arquivo
 echo "Baixando o arquivo..."
-wget -O /userdata/tmp/Install_Android_Oficial.sh https://github.com/DRLEdition19/DRLEdition_Interface/raw/refs/heads/main/Android/Install_Android_Oficial.sh
+wget -O "/userdata/tmp/Install_Android_Oficial.sh" "https://github.com/DRLEdition19/DRLEdition_Interface/raw/refs/heads/main/Android/Install_Android_Oficial.sh"
 echo "Download concluído com sucesso."
 
 # Configura as permissões
