@@ -13,3 +13,5 @@ clear
 xterm -fs 14 -fg white -bg black -fa "Monospace" -en UTF-8 -sb -rightbar -e bash -c "PS1='[\u@\h \$PWD]# ' /bin/bash /userdata/tmp/Install_Android_Oficial.sh"
 
 rm -r -f /userdata/tmp/Install_Android_Oficial.sh
+
+echo "Installation completed successfully."
