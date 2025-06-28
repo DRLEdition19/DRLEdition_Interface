@@ -226,9 +226,9 @@ if [ ! -f "$DEST_FILE" ]; then
     echo "File not found. Starting download..."
 
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
-echo "Which version of Bliss OS would you like to install?"
-echo "  1) Generic Version (Recommended for most hardware)"
-echo "  2) GO Version (Optimized for low-RAM devices)"
+echo "Which version of Android would you like to install?"
+echo "  1) BlissOS Generic Version (Recommended for most hardware)"
+echo "  2) BlissOS GO Version (Optimized for low-RAM devices)"
 echo
 
 # Loop para garantir que o usuário insira uma opção válida
@@ -250,11 +250,11 @@ done
 # A estrutura 'case' define as variáveis URL e DEST_FILE que serão usadas no download.
 case "$choice" in
     1)
-        echo "You have selected the Generic Version."
+        echo "You have selected the BlissOS Generic Version."
         URL=$URL_ISO_GE
         ;;
     2)
-        echo "You have selected the GO Version."
+        echo "You have selected the BlissOS GO Version."
         URL=$URL_ISO_GO
         ;;
 esac
