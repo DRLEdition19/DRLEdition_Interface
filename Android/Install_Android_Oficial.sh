@@ -213,43 +213,41 @@ clear
 
 # Download the DRL file
 
-
-
-
 echo # Blank line for better readability
 
-# --- VERIFICATION AND DOWNLOAD BLOCK ---
-echo "Checking if the file needs to be downloaded: $DEST_FILE"
+# --- BLOCO DE VERIFICAÇÃO E DOWNLOAD ---
+# Este bloco agora funciona para qualquer opção escolhida, pois as variáveis
+# URL e DEST_FILE foram definidas corretamente acima.
+echo "Checking if file needs to be downloaded: $DEST_FILE"
 
-# Check if the destination file does NOT exist
+# Verifica se o arquivo de destino NÃO existe
 if [ ! -f "$DEST_FILE" ]; then
-    # If it doesn't exist, start the download process
+    # Se não existir, inicia o processo de download
     echo "File not found. Starting download..."
-    sleep 4
-    clear
-    
-# --- USER VERSION SELECTION ---
+
+# --- VERIFICATION AND DOWNLOAD BLOCK ---
 echo "Which version of Bliss OS would you like to install?"
 echo "  1) Generic Version (Recommended for most hardware)"
 echo "  2) GO Version (Optimized for low-RAM devices)"
 echo
 
-# Loop to ensure the user enters a valid option
+# Loop para garantir que o usuário insira uma opção válida
 while true; do
-    read -p "Enter the number of your choice (1 or 2): " choice
+    read -p "Enter the number of your choice (1, 2): " choice
     case $choice in
+        # Adicione novos números de opção aqui, separados por |
         1|2)
-            break # Exits the loop if the choice is valid
+            break # Sai do loop se a escolha for válida
             ;;
         *)
-            echo "Invalid option. Please enter 1 or 2."
+            echo "Invalid option. Please enter a valid number."
             ;;
     esac
 done
 
-# --- DEFINE VARIABLES BASED ON CHOICE ---
 
-# Define the URL and filename variables based on the user's choice
+# --- DEFINIÇÃO DAS VARIÁVEIS FINAIS COM BASE NA ESCOLHA ---
+# A estrutura 'case' define as variáveis URL e DEST_FILE que serão usadas no download.
 case "$choice" in
     1)
         echo "You have selected the Generic Version."
@@ -261,17 +259,18 @@ case "$choice" in
         ;;
 esac
 
-    # Download the file
+echo # Linha em branco para clareza
+
+    # Faz o download do arquivo
     if curl -L -o "$DEST_FILE" "$URL"; then
         echo "Download completed successfully!"
     else
         echo "ERROR: An error occurred during the download."
         echo "The script cannot continue without the file. Exiting."
-        exit 1 # Exits the script because the required file could not be obtained
+        exit 1 # Encerra o script
     fi
-
 else
-    # If the file already exists, just inform and continue
+    # Se o arquivo já existir, apenas informa e continua
     echo "File already exists. Downloading the ISO is not necessary. Continuing installation..."
     sleep 5
 fi
