@@ -267,7 +267,7 @@ echo # Linha em branco para clareza
     else
         echo "ERROR: An error occurred during the download."
         echo "The script cannot continue without the file. Exiting."
-        exit 1 # Encerra o script
+        # exit 1 # Encerra o script
     fi
 else
     # Se o arquivo já existir, apenas informa e continua
