@@ -106,7 +106,8 @@ APP_EXEC="Android"
 PORT_SCRIPT_PATH="${PORTS_DIR}/${APP_EXEC}.sh"
 PORT_SCRIPT_NAME="${APP_EXEC}.sh"
 DEST_FILE="/userdata/system/configs/bat-drl/Android/Android.iso"
-URL_ISO="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Generic/Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso?viasf=1"
+URL_ISO_GO="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Go/Bliss-Go-v16.9.7-x86_64-OFFICIAL-gapps-20241012.iso?viasf=1"
+URL_ISO_GE="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Generic/Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso?viasf=1"
 
 GAMELIST_ENTRY_CONTENT="	<game>
 		<path>./${PORT_SCRIPT_NAME}</path>
@@ -212,17 +213,48 @@ clear
 # Download the DRL file
 
 
+# --- USER VERSION SELECTION ---
+echo "Which version of Bliss OS would you like to install?"
+echo "  1) Generic Version (Recommended for most hardware)"
+echo "  2) GO Version (Optimized for low-RAM devices)"
+echo
+
+# Loop to ensure the user enters a valid option
+while true; do
+    read -p "Enter the number of your choice (1 or 2): " choice
+    case $choice in
+        1|2)
+            break # Exits the loop if the choice is valid
+            ;;
+        *)
+            echo "Invalid option. Please enter 1 or 2."
+            ;;
+    esac
+done
+
+# --- DEFINE VARIABLES BASED ON CHOICE ---
+
+# Define the URL and filename variables based on the user's choice
+if [ "$choice" -eq 1 ]; then
+    echo "You have selected the Generic Version."
+    URL=$URL_ISO_GE
+else
+    echo "You have selected the GO Version."
+    URL=$URL_ISO_GO
+fi
+
+echo # Blank line for better readability
+
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
-echo "Checking if file needs to be downloaded: $DEST_FILE"
+echo "Checking if the file needs to be downloaded: $DEST_FILE"
 
 # Check if the destination file does NOT exist
 if [ ! -f "$DEST_FILE" ]; then
     # If it doesn't exist, start the download process
-    echo "Downloading the Android file (Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso)..."
     echo "File not found. Starting download from $URL..."
 
     # Download the file
-    if curl -L -o "$DEST_FILE" "$URL_ISO"; then
+    if curl -L -o "$DEST_FILE" "$URL"; then
         echo "Download completed successfully!"
     else
         echo "ERROR: An error occurred during the download."
@@ -231,9 +263,10 @@ if [ ! -f "$DEST_FILE" ]; then
     fi
 else
     # If the file already exists, just inform and continue
-    echo "File already exists. Downloading the ISO file is not necessary. Continuing installation...."
+    echo "File already exists. Downloading the ISO is not necessary. Continuing installation..."
     sleep 5
 fi
+
 clear
 echo "Downloading the DRL file..."
 curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.6.1.DRL"
