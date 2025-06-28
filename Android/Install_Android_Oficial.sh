@@ -106,8 +106,9 @@ APP_EXEC="Android"
 PORT_SCRIPT_PATH="${PORTS_DIR}/${APP_EXEC}.sh"
 PORT_SCRIPT_NAME="${APP_EXEC}.sh"
 DEST_FILE="/userdata/system/configs/bat-drl/Android/Android.iso"
-URL_ISO_GO="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Go/Bliss-Go-v16.9.7-x86_64-OFFICIAL-gapps-20241012.iso?viasf=1"
-URL_ISO_GE="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Generic/Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso?viasf=1"
+URL_ISO_GE16="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Generic/Bliss-v16.9.7-x86_64-OFFICIAL-gapps-20241011.iso?viasf=1"
+URL_ISO_GO14="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS14/OpenGApps/Go/Bliss-Go-v14.10.3-x86_64-OFFICIAL-opengapps-20241012.iso?viasf=1"
+URL_ISO_GO16="https://sinalbr.dl.sourceforge.net/project/blissos-x86/Official/BlissOS16/Gapps/Go/Bliss-Go-v16.9.7-x86_64-OFFICIAL-gapps-20241012.iso?viasf=1"
 
 GAMELIST_ENTRY_CONTENT="	<game>
 		<path>./${PORT_SCRIPT_NAME}</path>
@@ -229,8 +230,9 @@ if [ ! -f "$DEST_FILE" ]; then
 
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
 echo "Which version of Android would you like to install?"
-echo "  1) BlissOS Generic Version (Recommended for most hardware)"
-echo "  2) BlissOS GO Version (Optimized for low-RAM devices)"
+echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
+echo "  2) BlissOS 14 GO Version (Optimized for low power devices)"
+echo "  3) BlissOS 16 GO Version (Optimized for low-RAM devices)"
 echo
 
 # Loop para garantir que o usuário insira uma opção válida
@@ -238,7 +240,7 @@ while true; do
     read -p "Enter the number of your choice (1, 2): " choice
     case $choice in
         # Adicione novos números de opção aqui, separados por |
-        1|2)
+        1|2|3)
             break # Sai do loop se a escolha for válida
             ;;
         *)
@@ -252,12 +254,16 @@ done
 # A estrutura 'case' define as variáveis URL e DEST_FILE que serão usadas no download.
 case "$choice" in
     1)
-        echo "You have selected the BlissOS Generic Version."
-        URL=$URL_ISO_GE
+        echo "You have selected the BlissOS 16 Generic Version."
+        URL=$URL_ISO_GE16
         ;;
     2)
-        echo "You have selected the BlissOS GO Version."
-        URL=$URL_ISO_GO
+        echo "You have selected the BlissOS 14 GO Version."
+        URL=$URL_ISO_GO14
+        ;;
+    3)
+        echo "You have selected the BlissOS 16 GO Version."
+        URL=$URL_ISO_GO16
         ;;
 esac
 
