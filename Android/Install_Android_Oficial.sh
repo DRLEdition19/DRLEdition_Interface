@@ -224,6 +224,8 @@ echo "Checking if file needs to be downloaded: $DEST_FILE"
 if [ ! -f "$DEST_FILE" ]; then
     # Se não existir, inicia o processo de download
     echo "File not found. Starting download..."
+    sleep 4
+    clear
 
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
 echo "Which version of Android would you like to install?"
