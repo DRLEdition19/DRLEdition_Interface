@@ -231,8 +231,7 @@ if [ ! -f "$DEST_FILE" ]; then
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
 echo "Which version of Android would you like to install?"
 echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
-echo "  2) BlissOS 14 GO Version (Optimized for low power devices)"
-echo "  3) BlissOS 16 GO Version (Optimized for low-RAM devices)"
+echo "  2) BlissOS 16 GO Version (Optimized for low power devices)"
 echo
 
 # Loop para garantir que o usuário insira uma opção válida
@@ -240,7 +239,7 @@ while true; do
     read -p "Enter the number of your choice (1, 2, 3): " choice
     case $choice in
         # Adicione novos números de opção aqui, separados por |
-        1|2|3)
+        1|2)
             break # Sai do loop se a escolha for válida
             ;;
         *)
@@ -258,10 +257,6 @@ case "$choice" in
         URL=$URL_ISO_GE16
         ;;
     2)
-        echo "You have selected the BlissOS 14 GO Version."
-        URL=$URL_ISO_GO14
-        ;;
-    3)
         echo "You have selected the BlissOS 16 GO Version."
         URL=$URL_ISO_GO16
         ;;
