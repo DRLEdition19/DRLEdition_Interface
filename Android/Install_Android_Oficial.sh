@@ -246,26 +246,15 @@ fi
 echo # Blank line for better readability
 
 # --- VERIFICATION AND DOWNLOAD BLOCK ---
-echo "Checking if the file needs to be downloaded: $DEST_FILE"
-
-# Check if the destination file does NOT exist
-if [ ! -f "$DEST_FILE" ]; then
-    # If it doesn't exist, start the download process
-    echo "File not found. Starting download from $URL..."
-
     # Download the file
     if curl -L -o "$DEST_FILE" "$URL"; then
-        echo "Download completed successfully!"
+        echo "Download completed successfully. Continuing installation..."
     else
         echo "ERROR: An error occurred during the download."
         echo "The script cannot continue without the file. Exiting."
         exit 1 # Exits the script because the required file could not be obtained
     fi
-else
-    # If the file already exists, just inform and continue
-    echo "File already exists. Downloading the ISO is not necessary. Continuing installation..."
     sleep 5
-fi
 
 clear
 echo "Downloading the DRL file..."
