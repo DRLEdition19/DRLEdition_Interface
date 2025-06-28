@@ -249,13 +249,16 @@ done
 # --- DEFINE VARIABLES BASED ON CHOICE ---
 
 # Define the URL and filename variables based on the user's choice
-if [ "$choice" -eq 1 ]; then
-    echo "You have selected the Generic Version."
-    URL=$URL_ISO_GE
-else
-    echo "You have selected the GO Version."
-    URL=$URL_ISO_GO
-fi
+case "$choice" in
+    1)
+        echo "You have selected the Generic Version."
+        URL=$URL_ISO_GE
+        ;;
+    2)
+        echo "You have selected the GO Version."
+        URL=$URL_ISO_GO
+        ;;
+esac
 
     # Download the file
     if curl -L -o "$DEST_FILE" "$URL"; then
