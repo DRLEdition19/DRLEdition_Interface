@@ -223,7 +223,7 @@ echo "Checking if the file needs to be downloaded: $DEST_FILE"
 # Check if the destination file does NOT exist
 if [ ! -f "$DEST_FILE" ]; then
     # If it doesn't exist, start the download process
-    echo "File not found. Starting download from $URL..."
+    echo "File not found. Starting download..."
     
 # --- USER VERSION SELECTION ---
 echo "Which version of Bliss OS would you like to install?"
