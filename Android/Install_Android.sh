@@ -232,7 +232,7 @@ if [ ! -f "$DEST_FILE" ]; then
 else
     # If the file already exists, just inform and continue
     echo "File already exists. Downloading the ISO file is not necessary. Continuing installation...."
-    sleep 2
+    sleep 5
 fi
 clear
 echo "Downloading the DRL file..."
