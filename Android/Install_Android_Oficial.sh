@@ -236,7 +236,7 @@ echo
 
 # Loop para garantir que o usuário insira uma opção válida
 while true; do
-    read -p "Enter the number of your choice (1, 2, 3): " choice
+    read -p "Enter the number of your choice (1, 2): " choice
     case $choice in
         # Adicione novos números de opção aqui, separados por |
         1|2)
