@@ -7,8 +7,9 @@ echo "Download concluído com sucesso."
 # Configura as permissões
 echo "Configurando permissões (chmod 777)..."
 chmod 777 /userdata/tmp/Install_Android_Oficial.sh
+clear
 
 # Inicia a ferramenta para configurar o Idioma
-xterm -fs 14 -fg white -bg black -fa "Monospace" -en UTF-8 -sb -rightbar -e bash -c "PS1='[\u@\h \$PWD]# ' /bin/bash /tmp/Install_Android_Oficial.sh"
+xterm -fs 14 -fg white -bg black -fa "Monospace" -en UTF-8 -sb -rightbar -e bash -c "PS1='[\u@\h \$PWD]# ' /bin/bash /userdata/tmp/Install_Android_Oficial.sh"
 
-rm -r -f /userdata//tmp/Install_Android_Oficial.sh
+rm -r -f /userdata/tmp/Install_Android_Oficial.sh
