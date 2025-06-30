@@ -219,7 +219,7 @@ echo # Blank line for better readability
 # --- BLOCO DE VERIFICAÇÃO INICIAL ---
 # O script primeiro verifica se um dos arquivos ISO já existe.
 echo "Checking for existing installation files..."
-if [ -f "$DEST_FILE" ]; then
+if [ ! -f "$DEST_FILE" ]; then
     echo "An existing installation file was found."
 
     # Se um arquivo for encontrado, pergunta ao usuário o que fazer.
