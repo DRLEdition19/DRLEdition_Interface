@@ -219,7 +219,7 @@ echo # Blank line for better readability
 # --- BLOCO DE VERIFICAÇÃO INICIAL ---
 # O script primeiro verifica se um dos arquivos ISO já existe.
 echo "Checking for existing installation files..."
-if [ -f "$FILE_GE16" ] || [ -f "$FILE_GO16" ]; then
+if [ -f "$DEST_FILE" ]; then
     echo "An existing installation file was found."
 
     # Se um arquivo for encontrado, pergunta ao usuário o que fazer.
@@ -229,7 +229,7 @@ if [ -f "$FILE_GE16" ] || [ -f "$FILE_GO16" ]; then
             [Yy]* )
                 # Se o usuário disser 'sim', remove os arquivos existentes.
                 echo "Removing old files..."
-                rm -f "$FILE_GE16" "$FILE_GO16"
+                rm -f "$DEST_FILE"
                 # A instalação prosseguirá normalmente.
                 break
                 ;;
