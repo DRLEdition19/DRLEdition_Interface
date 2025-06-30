@@ -234,26 +234,8 @@ if [ -f "$DEST_FILE" ]; then
                 echo "Removing existing file..."
                 rm -f "$DEST_FILE"
                 NEEDS_DOWNLOAD=1 # Marca que o download é necessário
-                break # Sai do loop da pergunta
-                ;;
-            [Nn]* ) # Aceita 'n' ou 'N'
-                echo "Keeping existing file. Continuing with the installation..."
-                NEEDS_DOWNLOAD=0 # Marca que o download NÃO é necessário
-                sleep 3
-                break # Sai do loop da pergunta
-                ;;
-            * )
-                echo "Invalid option. Please enter 'y' for yes or 'n' for no."
-                ;;
-        esac
-    done
-else
-    # Se o arquivo não existir, o download é obviamente necessário.
-    echo "File not found. The download will start."
-    NEEDS_DOWNLOAD=1
-fi
 
-# --- BLOCO DE SELEÇÃO DO SISTEMA ---
+  # --- BLOCO DE SELEÇÃO DO SISTEMA ---
 # Agora, perguntamos ao usuário qual versão ele quer para sabermos
 # qual arquivo (DEST_FILE) devemos procurar ou baixar.
 
@@ -305,6 +287,24 @@ if [ "$NEEDS_DOWNLOAD" -eq 1 ]; then
         echo "The script cannot continue without the file. Exiting."
         exit 1 # Encerra o script, pois o download falhou
     fi
+fi
+                # break # Sai do loop da pergunta
+                ;;
+            [Nn]* ) # Aceita 'n' ou 'N'
+                echo "Keeping existing file. Continuing with the installation..."
+                NEEDS_DOWNLOAD=0 # Marca que o download NÃO é necessário
+                sleep 3
+                break # Sai do loop da pergunta
+                ;;
+            * )
+                echo "Invalid option. Please enter 'y' for yes or 'n' for no."
+                ;;
+        esac
+    done
+else
+    # Se o arquivo não existir, o download é obviamente necessário.
+    echo "File not found. The download will start."
+    NEEDS_DOWNLOAD=1
 fi
 
 clear
