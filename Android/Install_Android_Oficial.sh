@@ -216,95 +216,85 @@ clear
 
 echo # Blank line for better readability
 
-# --- BLOCO DE VERIFICAÇÃO E DOWNLOAD ---
-# Primeiro será definido qual arquivo procurar, verificamos se ele já existe.
+# --- BLOCO DE VERIFICAÇÃO INICIAL ---
+# O script primeiro verifica se um dos arquivos ISO já existe.
+echo "Checking for existing installation files..."
+if [ -f "$FILE_GE16" ] || [ -f "$FILE_GO16" ]; then
+    echo "An existing installation file was found."
 
-# Variável para controlar se o download é necessário (1 = sim, 0 = não)
-NEEDS_DOWNLOAD=0
-
-# Verifica se o arquivo de destino JÁ EXISTE
-if [ -f "$DEST_FILE" ]; then
-    echo "File '$DEST_FILE' already exists."
-
-    # Pergunta ao usuário se ele deseja remover o arquivo existente
+    # Se um arquivo for encontrado, pergunta ao usuário o que fazer.
     while true; do
-        read -p "Do you want to remove it and download it again? (y/n): " remove_choice
-        case $remove_choice in
-            [Yy]* ) # Aceita 'y' ou 'Y' (ou 'yes', 'YES', etc.)
-                echo "Removing existing file..."
-                rm -f "$DEST_FILE"
-                NEEDS_DOWNLOAD=1 # Marca que o download é necessário
-
-  # --- BLOCO DE SELEÇÃO DO SISTEMA ---
-# Agora, perguntamos ao usuário qual versão ele quer para sabermos
-# qual arquivo (DEST_FILE) devemos procurar ou baixar.
-
-echo "Which version of Android would you like to install?"
-echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
-echo "  2) BlissOS 16 GO Version (Optimized for computers with low processing power and RAM)"
-echo
-
-# Loop para garantir que o usuário insira uma opção válida
-while true; do
-    read -p "Enter the number of your choice (1, 2): " choice
-    case $choice in
-        1|2)
-            break # Sai do loop se a escolha for válida
-            ;;
-        *)
-            echo "Invalid option. Please enter a valid number."
-            ;;
-    esac
-done
-
-# --- DEFINIÇÃO DAS VARIÁVEIS COM BASE NA ESCOLHA ---
-# A estrutura 'case' define as variáveis URL e DEST_FILE que serão usadas.
-# Assumindo que as variáveis URL_ISO_... já foram definidas anteriormente no seu script.
-case "$choice" in
-    1)
-        echo "You have selected the BlissOS 16 Generic Version."
-        URL=$URL_ISO_GE16
-        ;;
-    2)
-        echo "You have selected the BlissOS 16 GO Version."
-        URL=$URL_ISO_GO16
-        ;;
-esac
-
-echo # Linha em branco para clareza
-
-# Se a variável NEEDS_DOWNLOAD for 1, o download é executado
-if [ "$NEEDS_DOWNLOAD" -eq 1 ]; then
-    echo "Starting download..."
-    sleep 2
-    clear
-
-    # Faz o download do arquivo
-    if curl -L -o "$DEST_FILE" "$URL"; then
-        echo "Download completed successfully!"
-    else
-        echo "ERROR: An error occurred during the download."
-        echo "The script cannot continue without the file. Exiting."
-        exit 1 # Encerra o script, pois o download falhou
-    fi
-fi
-                # break # Sai do loop da pergunta
+        read -p "Do you want to remove it and download a new version? (y/n): " choice
+        case $choice in
+            [Yy]* )
+                # Se o usuário disser 'sim', remove os arquivos existentes.
+                echo "Removing old files..."
+                rm -f "$FILE_GE16" "$FILE_GO16"
+                # A instalação prosseguirá normalmente.
+                break
                 ;;
-            [Nn]* ) # Aceita 'n' ou 'N'
-                echo "Keeping existing file. Continuing with the installation..."
-                NEEDS_DOWNLOAD=0 # Marca que o download NÃO é necessário
+            [Nn]* )
+                # Se o usuário disser 'não', o script pulará toda a etapa de download.
+                echo "Keeping the existing file. Skipping download and proceeding with the script..."
+                SKIP_INSTALLATION=1
                 sleep 3
-                break # Sai do loop da pergunta
+                break
                 ;;
             * )
                 echo "Invalid option. Please enter 'y' for yes or 'n' for no."
                 ;;
         esac
     done
-else
-    # Se o arquivo não existir, o download é obviamente necessário.
-    echo "File not found. The download will start."
-    NEEDS_DOWNLOAD=1
+fi
+
+# --- BLOCO DE SELEÇÃO E DOWNLOAD ---
+# Este bloco inteiro só será executado se a variável SKIP_INSTALLATION for 0.
+if [ "$SKIP_INSTALLATION" -eq 0 ]; then
+
+    clear
+    echo "Which version of Android would you like to install?"
+    echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
+    echo "  2) BlissOS 16 GO Version (Optimized for computers with low processing power and RAM)"
+    echo
+
+    # Loop para garantir que o usuário insira uma opção válida
+    while true; do
+        read -p "Enter the number of your choice (1, 2): " version_choice
+        case $version_choice in
+            1|2)
+                break # Sai do loop se a escolha for válida
+                ;;
+            *)
+                echo "Invalid option. Please enter a valid number."
+                ;;
+        esac
+    done
+
+    # Define as variáveis URL e DEST_FILE com base na escolha
+    case "$version_choice" in
+        1)
+            echo "You have selected the BlissOS 16 Generic Version."
+            URL=$URL_ISO_GE16
+            ;;
+        2)
+            echo "You have selected the BlissOS 16 GO Version."
+            URL=$URL_ISO_GO16
+            ;;
+    esac
+
+    echo # Linha em branco para clareza
+
+    # Inicia o processo de download
+    echo "Starting download for: $DEST_FILE"
+    sleep 2
+
+    if curl -L -o "$DEST_FILE" "$URL"; then
+        echo "Download completed successfully!"
+    else
+        echo "ERROR: An error occurred during the download."
+        echo "The script cannot continue without the file. Exiting."
+        exit 1 # Encerra o script se o download falhar
+    fi
 fi
 
 clear
