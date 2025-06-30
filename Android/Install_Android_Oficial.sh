@@ -289,9 +289,9 @@ if [ -f "$DEST_FILE" ]; then
             [Nn]*)
                 echo "Keeping the existing file. Download will be skipped."
                 # Sets the DEST_FILE variable to the file that already exists so the rest of the script can use it.
-                if [ -f "$DEST_FILE" ]; then
-                    $DEST_FILE
-                fi
+                # if [ -f "$DEST_FILE" ]; then
+                #     $DEST_FILE
+                # fi
                 echo "Continuing installation with file: $DEST_FILE"
                 sleep 4
                 break
