@@ -271,7 +271,7 @@ sleep 2
 
 if [ -f "$DEST_FILE" ]; then
     # If one or more files are found...
-    echo "A BlissOS installation file was already found."
+    echo "A installation file was already found."
     
     # Asks the user if they want to remove and download again.
     while true; do
