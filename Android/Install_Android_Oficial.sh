@@ -216,53 +216,21 @@ clear
 
 echo # Blank line for better readability
 
-# --- BLOCO DE VERIFICAÇÃO INICIAL ---
-# O script primeiro verifica se um dos arquivos ISO já existe.
-echo "Checking for existing installation files..."
-if [ ! -f "$DEST_FILE" ]; then
-    echo "An existing installation file was found."
-
-    # Se um arquivo for encontrado, pergunta ao usuário o que fazer.
-    while true; do
-        read -p "Do you want to remove it and download a new version? (y/n): " choice
-        case $choice in
-            [Yy]* )
-                # Se o usuário disser 'sim', remove os arquivos existentes.
-                echo "Removing old files..."
-                rm -f "$DEST_FILE"
-                # A instalação prosseguirá normalmente.
-                break
-                ;;
-            [Nn]* )
-                # Se o usuário disser 'não', o script pulará toda a etapa de download.
-                echo "Keeping the existing file. Skipping download and proceeding with the script..."
-                SKIP_INSTALLATION=1
-                sleep 3
-                break
-                ;;
-            * )
-                echo "Invalid option. Please enter 'y' for yes or 'n' for no."
-                ;;
-        esac
-    done
-fi
-
-# --- BLOCO DE SELEÇÃO E DOWNLOAD ---
-# Este bloco inteiro só será executado se a variável SKIP_INSTALLATION for 0.
-if [ "$SKIP_INSTALLATION" -eq 0 ]; then
-
+# Function that encapsulates the entire selection and download process.
+# This avoids code repetition.
+start_download_process() {
     clear
     echo "Which version of Android would you like to install?"
     echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
     echo "  2) BlissOS 16 GO Version (Optimized for computers with low processing power and RAM)"
     echo
 
-    # Loop para garantir que o usuário insira uma opção válida
+    # Loop to ensure the user enters a valid option
     while true; do
-        read -p "Enter the number of your choice (1, 2): " version_choice
-        case $version_choice in
+        read -p "Enter the number of your choice (1, 2): " choice
+        case $choice in
             1|2)
-                break # Sai do loop se a escolha for válida
+                break # Exits the loop if the choice is valid
                 ;;
             *)
                 echo "Invalid option. Please enter a valid number."
@@ -270,8 +238,8 @@ if [ "$SKIP_INSTALLATION" -eq 0 ]; then
         esac
     done
 
-    # Define as variáveis URL e DEST_FILE com base na escolha
-    case "$version_choice" in
+    # Defines variables based on the user's choice
+    case "$choice" in
         1)
             echo "You have selected the BlissOS 16 Generic Version."
             URL=$URL_ISO_GE16
@@ -281,20 +249,64 @@ if [ "$SKIP_INSTALLATION" -eq 0 ]; then
             URL=$URL_ISO_GO16
             ;;
     esac
+    
+    echo # Blank line for clarity
+    echo "Starting download of: $DEST_FILE"
+    sleep 4
 
-    echo # Linha em branco para clareza
-
-    # Inicia o processo de download
-    echo "Starting download for: $DEST_FILE"
-    sleep 2
-
+    # Downloads the file using the defined URL and filename
     if curl -L -o "$DEST_FILE" "$URL"; then
         echo "Download completed successfully!"
     else
         echo "ERROR: An error occurred during the download."
         echo "The script cannot continue without the file. Exiting."
-        exit 1 # Encerra o script se o download falhar
+        # exit 1 # Uncomment this line to make the script stop in case of an error.
     fi
+}
+
+# --- MAIN VERIFICATION LOGIC ---
+# The script now looks for ANY of the defined ISO files.
+echo "Checking for local ISO files..."
+sleep 2
+
+if [ -f "$DEST_FILE" ]; then
+    # If one or more files are found...
+    echo "A BlissOS installation file was already found."
+    
+    # Asks the user if they want to remove and download again.
+    while true; do
+        read -p "Do you want to remove the existing file and download a new one? (y/n): " remove_choice
+        case $remove_choice in
+            [Yy]*)
+                echo "Removing existing files..."
+                # The 'rm -f' command removes the files without asking for confirmation and does not error if one of them doesn't exist.
+                rm -f "$DEST_FILE"
+                echo "Files removed. Starting download process..."
+                sleep 2
+                start_download_process # Calls the download function
+                break
+                ;;
+            [Nn]*)
+                echo "Keeping the existing file. Download will be skipped."
+                # Sets the DEST_FILE variable to the file that already exists so the rest of the script can use it.
+                if [ -f "$DEST_FILE" ]; then
+                    $DEST_FILE
+                fi
+                echo "Continuing installation with file: $DEST_FILE"
+                sleep 4
+                break
+                ;;
+            *)
+                echo "Invalid option. Please enter 'y' for yes or 'n' for no."
+                ;;
+        esac
+    done
+else
+    # If NO file is found, it starts the download process directly.
+    echo "No local installation file was found."
+    echo "The download process will be initiated."
+    sleep 3
+    start_download_process # Calls the download function
 fi
 
 clear
