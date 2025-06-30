@@ -217,18 +217,46 @@ clear
 echo # Blank line for better readability
 
 # --- BLOCO DE VERIFICAÇÃO E DOWNLOAD ---
-# Este bloco agora funciona para qualquer opção escolhida, pois as variáveis
-# URL e DEST_FILE foram definidas corretamente acima.
-echo "Checking if file needs to be downloaded: $DEST_FILE"
+# Primeiro será definido qual arquivo procurar, verificamos se ele já existe.
 
-# Verifica se o arquivo de destino NÃO existe
-if [ ! -f "$DEST_FILE" ]; then
-    # Se não existir, inicia o processo de download
-    echo "File not found. Starting download..."
-    sleep 4
-    clear
+# Variável para controlar se o download é necessário (1 = sim, 0 = não)
+NEEDS_DOWNLOAD=0
 
-# --- VERIFICATION AND DOWNLOAD BLOCK ---
+# Verifica se o arquivo de destino JÁ EXISTE
+if [ -f "$DEST_FILE" ]; then
+    echo "File '$DEST_FILE' already exists."
+
+    # Pergunta ao usuário se ele deseja remover o arquivo existente
+    while true; do
+        read -p "Do you want to remove it and download it again? (y/n): " remove_choice
+        case $remove_choice in
+            [Yy]* ) # Aceita 'y' ou 'Y' (ou 'yes', 'YES', etc.)
+                echo "Removing existing file..."
+                rm -f "$DEST_FILE"
+                NEEDS_DOWNLOAD=1 # Marca que o download é necessário
+                break # Sai do loop da pergunta
+                ;;
+            [Nn]* ) # Aceita 'n' ou 'N'
+                echo "Keeping existing file. Continuing with the installation..."
+                NEEDS_DOWNLOAD=0 # Marca que o download NÃO é necessário
+                sleep 3
+                break # Sai do loop da pergunta
+                ;;
+            * )
+                echo "Invalid option. Please enter 'y' for yes or 'n' for no."
+                ;;
+        esac
+    done
+else
+    # Se o arquivo não existir, o download é obviamente necessário.
+    echo "File not found. The download will start."
+    NEEDS_DOWNLOAD=1
+fi
+
+# --- BLOCO DE SELEÇÃO DO SISTEMA ---
+# Agora, perguntamos ao usuário qual versão ele quer para sabermos
+# qual arquivo (DEST_FILE) devemos procurar ou baixar.
+
 echo "Which version of Android would you like to install?"
 echo "  1) BlissOS 16 Generic Version (Recommended for most hardware)"
 echo "  2) BlissOS 16 GO Version (Optimized for computers with low processing power and RAM)"
@@ -238,7 +266,6 @@ echo
 while true; do
     read -p "Enter the number of your choice (1, 2): " choice
     case $choice in
-        # Adicione novos números de opção aqui, separados por |
         1|2)
             break # Sai do loop se a escolha for válida
             ;;
@@ -248,9 +275,9 @@ while true; do
     esac
 done
 
-
-# --- DEFINIÇÃO DAS VARIÁVEIS FINAIS COM BASE NA ESCOLHA ---
-# A estrutura 'case' define as variáveis URL e DEST_FILE que serão usadas no download.
+# --- DEFINIÇÃO DAS VARIÁVEIS COM BASE NA ESCOLHA ---
+# A estrutura 'case' define as variáveis URL e DEST_FILE que serão usadas.
+# Assumindo que as variáveis URL_ISO_... já foram definidas anteriormente no seu script.
 case "$choice" in
     1)
         echo "You have selected the BlissOS 16 Generic Version."
@@ -264,18 +291,20 @@ esac
 
 echo # Linha em branco para clareza
 
+# Se a variável NEEDS_DOWNLOAD for 1, o download é executado
+if [ "$NEEDS_DOWNLOAD" -eq 1 ]; then
+    echo "Starting download..."
+    sleep 2
+    clear
+
     # Faz o download do arquivo
     if curl -L -o "$DEST_FILE" "$URL"; then
         echo "Download completed successfully!"
     else
         echo "ERROR: An error occurred during the download."
         echo "The script cannot continue without the file. Exiting."
-        # exit 1 # Encerra o script
+        exit 1 # Encerra o script, pois o download falhou
     fi
-else
-    # Se o arquivo já existir, apenas informa e continua
-    echo "File already exists. Downloading the ISO is not necessary. Continuing installation..."
-    sleep 5
 fi
 
 clear
