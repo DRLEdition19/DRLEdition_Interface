@@ -210,6 +210,7 @@ mkdir -p $EXTRACT_DIR
 mkdir -p $PORTS_DIR
 mkdir -p "/userdata/system/configs/bat-drl/Android"
 mkdir -p "/userdata/tmp"
+chmod 777 "$GAMELIST_PATH"
 clear
 
 # Download the DRL file
