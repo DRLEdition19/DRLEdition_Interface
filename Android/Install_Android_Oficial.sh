@@ -271,7 +271,7 @@ sleep 2
 
 if [ -f "$DEST_FILE" ]; then
     # If one or more files are found...
-    echo "A installation file was already found."
+    echo "A BlissOS installation file was already found."
     
     # Asks the user if they want to remove and download again.
     while true; do
@@ -290,7 +290,9 @@ if [ -f "$DEST_FILE" ]; then
                 echo "Keeping the existing file. Download will be skipped."
                 # Sets the DEST_FILE variable to the file that already exists so the rest of the script can use it.
                 if [ -f "$DEST_FILE" ]; then
-                    $DEST_FILE
+                    DEST_FILE=$DEST_FILE
+                else
+                    DEST_FILE=$DEST_FILE
                 fi
                 echo "Continuing installation with file: $DEST_FILE"
                 sleep 4
