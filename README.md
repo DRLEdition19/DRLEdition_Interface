@@ -220,7 +220,7 @@ Para que o processo de instalação tenha efeito, basta reiniciar seu batocera. 
 
 * ***Atualização - 02.07.2025 - Versão 8.5***
     * **Correção de Bugs*
-    * **Agora é possível montar e desmontar imagens de arquivos em formato ISO, IMG, BIN e outros, através do menu de contexto*
+    * **Agora é possível montar e desmontar arquivos em formato ISO, IMG, BIN e outros, através do menu de contexto*
     * **O "Desktop For Batocera" agora conta com uma função que irá te alertar sempre que houver novas atualizações*
 
 ---
