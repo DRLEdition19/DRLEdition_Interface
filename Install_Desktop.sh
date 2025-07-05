@@ -102,7 +102,7 @@ PORTS_DIR="/userdata/roms/ports"
 # Create the temporary directories
 echo "Creating temporary directories..."
 # batocera-save-overlay 300
-batocera-save-overlay
+batocera-save-overlay 300
 mkdir -p $TEMP_DIR
 mkdir -p $EXTRACT_DIR
 mkdir -p $PORTS_DIR
