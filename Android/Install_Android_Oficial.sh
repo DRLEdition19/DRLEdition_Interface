@@ -314,7 +314,7 @@ fi
 
 clear
 echo "Downloading the DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.0.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.6.1.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
