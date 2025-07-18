@@ -91,7 +91,7 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Android 5.6.1 by DRL Edition."
+echo "Welcome to the automatic installer for the Android 5.6.2 by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/Android"
@@ -314,7 +314,7 @@ fi
 
 clear
 echo "Downloading the DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.6.1.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Android_5.6.2.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -363,6 +363,6 @@ rm -rf "$TEMP_DIR"
 batocera-save-overlay
 clear
 echo "Installation completed successfully."
-echo "Android 5.6.1 by DRL Edition"
+echo "Android 5.6.2 by DRL Edition"
 
 exit 0
