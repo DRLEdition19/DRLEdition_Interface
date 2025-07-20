@@ -92,7 +92,7 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Desktop_Update 8.6 by DRL Edition."
+echo "Welcome to the automatic installer for the Desktop_Update 8.6.1 by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/Desktop_Update"
@@ -153,6 +153,6 @@ batocera-save-overlay
 clear
 echo "Installation completed successfully."
 echo "For the Desktop to work properly, you will need to restart your machine."
-echo "Desktop_Update 8.6 by DRL Edition"
+echo "Desktop_Update 8.6.1 by DRL Edition"
 
 exit 0
