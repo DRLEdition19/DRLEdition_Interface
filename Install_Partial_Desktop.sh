@@ -159,6 +159,8 @@ echo "Saving changes..."
 rm -f "/userdata/system/Desktop/gparted.desktop"
 rm -f "/userdata/system/Desktop/vlc.desktop"
 rm -f "/userdata/system/Desktop/VLC.desktop"
+rm -f "/userdata/system/Desktop/CoreKeyboard.png"
+cp -rf "/overlay/overlay/usr/share/applications/CoreKeyboard.desktop" "/userdata/system/Desktop/CoreKeyboard.desktop"
 batocera-save-overlay
 clear
 echo "Installation completed successfully."
