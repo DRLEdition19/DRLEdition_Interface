@@ -70,19 +70,7 @@ ascii_art=(
 )
 
 # Animação da arte ASCII com efeito degradê
-for ((k=0; k<3; k++)); do  # 3 ciclos completos
-    for ((i=0; i<${#colors[@]}; i++)); do
-        clear
-        # Mostra data e hora 
-        show_current_time
-        
-        # Mostra a arte ASCII na cor atual do degradê
-        for line in "${ascii_art[@]}"; do
-            echo -e "${colors[$i]}${line}${reset}"
-        done
-        sleep 0.1
-    done
-done
+
 
 # Mostra a versão final em azul
 clear
