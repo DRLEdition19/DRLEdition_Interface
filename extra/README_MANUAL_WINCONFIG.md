@@ -619,6 +619,11 @@ O WinConfig é como um maestro que comanda outros programinhas menores para faze
 * **Gerenciamento de prefixos Wine com backup e restauração**
 * **Controle granular sobre DLLs, fontes, configurações e aplicativos Windows**
 
+***Atualização - 18.11.2025***
+
+* **Correção de Bugs**
+* **Implementado limpeza de prefixos obsoletos durante a aplicação das ferramentas Redist**
+
 **Precisa de Ajuda?**
 * **Dentro do WinConfig:** O botão `[Ajuda]` tem guias como este.
 * **Repositório no GitHub:** [DRLEdition_Interface](https://github.com/DRLEdition19/DRLEdition_Interface)
