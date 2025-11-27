@@ -92,7 +92,7 @@ clear
 
 
 # Welcome message
-echo "Welcome to the automatic installer for the Desktop_Update 8.6.1 by DRL Edition."
+echo "Welcome to the automatic installer for the Desktop_Update 8.7.0 by DRL Edition."
 
 # Temporary directory for download
 TEMP_DIR="/userdata/tmp/Desktop_Update"
@@ -112,7 +112,7 @@ clear
 
 # Download the DRL file
 echo "Downloading the DRL file..."
-curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Desktop_Update_8.6.1.DRL"
+curl -L -o $DRL_FILE "https://github.com/DRLEdition19/DRLEdition_Interface/releases/download/files/Desktop_Update_8.7.0.DRL"
 
 # Check if download was successful
 if [ ! -f "$DRL_FILE" ]; then
@@ -153,6 +153,6 @@ batocera-save-overlay
 clear
 echo "Installation completed successfully."
 echo "For the Desktop to work properly, you will need to restart your machine."
-echo "Desktop_Update 8.6.1 by DRL Edition"
+echo "Desktop_Update 8.7.0 by DRL Edition"
 
 exit 0
