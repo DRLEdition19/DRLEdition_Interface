@@ -1,0 +1,8 @@
+Analise a imagem em anexo e recrie-a como uma ilustração de altíssima resolução em 4k e dpi de 1200 no estilo desenhado a lápis e com profundidade, sem alterar nenhum detalhe da mesma, otimizada especificamente para máquina de gravação a laser.
+Siga estas regras estritamente:
+Cores: Utilize EXCLUSIVAMENTE preto puro (#000000) e branco puro (#FFFFFF). É terminantemente proibido o uso de tons de cinza, gradientes, esfumaçados ou meios-tons (halftones).
+Fidelidade: Mantenha a exata proporção original, a composição, a pose e o design principal da foto. Não altere a essência da imagem.
+Detalhamento Extremo: Adicione uma riqueza de detalhes finos e coerentes com a imagem original. Para representar sombras, profundidade e texturas (como tecidos, cabelos, areia, etc.), utilize técnicas de hachura (linhas cruzadas) e contornos precisos de espessuras variadas.
+Limpeza: O fundo e as formas devem ser nítidos e bem definidos, sem "ruídos" ou pixels soltos, garantindo que o software de gravação consiga rastrear perfeitamente os vetores.
+Resolução: Gere o resultado no tamanho e resolução máximos permitidos.
+Objetivo final: A imagem deve parecer uma arte finalizada a nanquim, com alto contraste e detalhes deslumbrantes, pronta para ser rastreada e cortada/gravada com perfeição. 
